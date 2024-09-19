@@ -1,0 +1,1946 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  	<title>loanbuddy - teman kewangan anda</title>
+  	<!-- <link rel="shortcut icon" href="assets/images/logo/favourite_icon_1.svg"> -->
+    <link rel="shortcut icon" href="assets/images/Green LB 1.png">
+
+  	<!-- Framework - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!-- Icon Font - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
+
+
+    <!-- Animation - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+    <!-- Cursor - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/cursor.css">
+
+    <!-- Carousel - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+
+    <!-- Video & Image Popup - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+
+    <!-- Vanilla Calendar - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vanilla-calendar.min.css">
+
+    <!-- Custom - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  </head>
+
+
+  <body>
+
+    <!-- Body Wrap - Start -->
+    <div class="page_wrapper">
+
+      <!-- Back To Top - Start -->
+      <div class="backtotop">
+        <a href="#" class="scroll">
+          <i class="far fa-arrow-up"></i>
+        </a>
+      </div>
+      <!-- Back To Top - End -->
+
+      <!-- popup whatsapp start -->
+	<input class='chat-menu hidden' id='offchat-menu' type='checkbox' />
+	<div class='sticky-button' id='sticky-button'>
+		<label for='offchat-menu'>
+		 <svg class='svg-1' style='width:30px;height:30px' viewBox='0 0 24 24'>
+	<path d='M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z' />
+	</svg>
+			<svg class='svg-2' style='width:30px;height:30px' viewBox='0 0 24 24'>
+	<path d='M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 12,22C17.53,22 22,17.53 22,12C22,6.47 17.53,2 12,2M14.59,8L12,10.59L9.41,8L8,9.41L10.59,12L8,14.59L9.41,16L12,13.41L14.59,16L16,14.59L13.41,12L16,9.41L14.59,8Z' />
+	</svg>
+		</label>
+	</div>
+	<div class='sticky-chat'>
+		<!-- <div class='chat-content'>
+			<div class='chat-header'>
+				<svg viewbox='0 0 32 32'><path d='M24,22a1,1,0,0,1-.64-.23L18.84,18H17A8,8,0,0,1,17,2h6a8,8,0,0,1,2,15.74V21a1,1,0,0,1-.58.91A1,1,0,0,1,24,22ZM17,4a6,6,0,0,0,0,12h2.2a1,1,0,0,1,.64.23L23,18.86V16.92a1,1,0,0,1,.86-1A6,6,0,0,0,23,4Z'></path><rect height='2' width='2' x='19' y='9'></rect><rect height='2' width='2' x='14' y='9'></rect><rect height='2' width='2' x='24' y='9'></rect><path d='M8,30a1,1,0,0,1-.42-.09A1,1,0,0,1,7,29V25.74a8,8,0,0,1-1.28-15,1,1,0,1,1,.82,1.82,6,6,0,0,0,1.6,11.4,1,1,0,0,1,.86,1v1.94l3.16-2.63A1,1,0,0,1,12.8,24H15a5.94,5.94,0,0,0,4.29-1.82,1,1,0,0,1,1.44,1.4A8,8,0,0,1,15,26H13.16L8.64,29.77A1,1,0,0,1,8,30Z'></path></svg>
+				<div class='title'>Silahkan chat jika ada pertanyaan <span>Admin akan membalas dalam beberapa menit</span></div>
+			</div>
+			<div class='chat-text'>
+				<span>Halo, Ada yang bisa kami bantu?</span>
+				<span class='typing'><svg viewbox='0 0 512 512'><circle cx='256' cy='256' r='48'></circle><circle cx='416' cy='256' r='48'></circle><circle cx='96' cy='256' r='48'></circle></svg></span>
+			</div>
+		</div> -->
+		<a class='chat-button' href='#' rel='nofollow noreferrer' target='_blank'>
+			<span>Start chatting now!</span>
+			<svg viewBox='0 0 32 32'><path class='cls-1' d='M19.47,31a2,2,0,0,1-1.8-1.09l-4-7.57a1,1,0,0,1,1.77-.93l4,7.57L29,3.06,3,12.49l9.8,5.26,8.32-8.32a1,1,0,0,1,1.42,1.42l-8.85,8.84a1,1,0,0,1-1.17.18L2.09,14.33a2,2,0,0,1,.25-3.72L28.25,1.13a2,2,0,0,1,2.62,2.62L21.39,29.66A2,2,0,0,1,19.61,31Z'></path></svg>    
+		</a>
+	</div>
+	
+	<!-- popup whatsapp end -->
+
+
+      <!-- Site Header - Start
+      ================================================== -->
+      <header class="site_header site_header_2">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col col-lg-3 col-5">
+              <div class="site_logo">
+                <a class="site_link" href="index.html">
+                  <!-- <img src="assets/images/logo/site_logo.svg" alt="loanbuddy l- teman kewangan anda"> -->
+                  <img src="assets/images/logo/Loanbuddy-Logo.png" alt="loanbuddy l- teman kewangan anda">
+                </a>
+              </div>
+            </div>
+            <div class="col col-lg-8 col-2">
+              <nav class="main_menu navbar navbar-expand-lg">
+                <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
+                  <ul class="main_menu_list unordered_list_center">
+                    <li><a class="nav-link" href="index.html">Laman Utama</a></li>
+                    <li class="dropdown">
+                      <a class="nav-link" href="#" id="service_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Perkhidmatan
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="service_submenu">
+                        <li class="dropdown">
+                          <a class="nav-link" href="loanfit.html">
+                            loanfit
+                          </a>
+                          <!-- <ul class="dropdown-menu" aria-labelledby="courses_layout_submenu">
+                            <li><a href="course.html">Courses Grid</a></li>
+                            <li><a href="course_list.html">Courses List</a></li>
+                          </ul> -->
+                        </li>
+                        <li class="dropdown">
+                          <a class="nav-link" href="loancompare-tba.html" >
+                            loancompare
+                          </a>
+                          <!-- <ul class="dropdown-menu" aria-labelledby="courses_details_submenu">
+                            <li><a href="course_details.html">Course Details V.1</a></li>
+                            <li><a href="course_details_2.html">Course Details V.2</a></li>
+                          </ul> -->
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a class="nav-link" href="#" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tentang Kami
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="pages_submenu">
+                        <li><a href="about.html">Kenali Kami</a></li>
+                        <!-- <li class="dropdown">
+                          <a class="nav-link" href="#" id="mentors_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Mentors
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="mentors_submenu">
+                            <li><a href="mentor.html">Mentors</a></li>
+                            <li><a href="mentor_details.html">Mentors Details</a></li>
+                          </ul>
+                        </li> -->
+                        <li><a href="faq.html">F.A.Q.</a></li>
+                        <!-- <li class="dropdown">
+                          <a class="nav-link" href="#" id="events_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Events
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="events_submenu">
+                            <li><a href="event.html">Events</a></li>
+                            <li><a href="event_details.html">Event Details</a></li>
+                          </ul>
+                        </li> -->
+                        <!-- <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="error.html">404 Error</a></li> -->
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a class="nav-link" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sumber
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="blog_submenu">
+                        <li><a href="blog.html">Our Blogs</a></li>
+                        <li><a href="blog_details.html">Blog Details</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="nav-link" href="contact.html">Hubungi Kami</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col col-lg-3 col-5">
+              <ul class="header_btns_group unordered_list_end">
+                <li>
+                  <button class="mobile_menu_btn" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="far fa-bars"></i>
+                  </button>
+                </li>
+                <!-- <li>
+                  <a class="btn border_dark" href="login.html">
+                    <span>
+                      <small>Login</small>
+                      <small>Login</small>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="btn btn_dark" href="signup.html">
+                    <span>
+                      <small>Sign Up</small>
+                      <small>Sign Up</small>
+                    </span>
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Site Header - End
+      ================================================== -->
+
+      <!-- Main Body - Start
+      ================================================== -->
+      <main class="page_content">
+
+        <!-- Banner Section - Start
+        ========================================style="background-image: url('assets/images/shape/shape_img_6.svg');"========== -->
+        <section class="hero_banner style_2 mouse_move testimonial_carousel" >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col col-lg-6">
+                <h1 class="banner_big_title">
+                  loanbuddy, teman kewangan anda!
+                </h1>
+                <p class="banner_description">
+                  kembangkan ilmu kewangan anda & melangkah ke arah bijak kewangan bersama-sama. 
+                </p>
+                <!-- <form action="#">
+                  <div class="form_item">
+                    <input type="search" name="search" placeholder="segalanya bermula di sini">
+                    <button type="submit" class="btn btn_green">
+                      <span>
+                        <small>Lebih</small>
+                        <small>Lanjut</small>
+                      </span>
+                    </button>
+                  </div>
+                </form> -->
+                <!-- <ul class="tags_list unordered_list">
+                  <li><a href="#!">Pinjaman</a></li>
+                  <li><a href="#!">Kewangan</a></li>
+                  <li><a href="#!">Bantuan</a></li>
+                  <li><a href="#!">Panduan Kewangan</a></li>
+                  <li><a href="#!">Perancangan Kewangan</a></li>
+                  <li><a href="#!">LoanFit</a></li>
+                  <li><a href="#!">LoanBuddy</a></li>
+                  <li><a href="#!">LoanCompare</a></li>
+                  
+                </ul> -->
+              </div>
+              <div class="col col-lg-6">
+                <div class="banner_image_2">
+                  <div class="image_wrap_1">
+                    <div class="layer" data-depth="0.1">
+                      <img src="assets/images/banner/view-funny-animal (2).png" alt="Collab – Online Learning Platform">
+                    </div>
+                  </div>
+                  <div class="child_image image_wrap_2">
+                    <div class="layer" data-depth="0.3">
+                      <img src="assets/images/banner/hero_banner_img_3.jpg" alt="Collab – Online Learning Platform">
+                    </div>
+                  </div>
+                  <div class="child_image image_wrap_3">
+                    <div class="layer" data-depth="0.2">
+                      <img src="assets/images/banner/hero_banner_img_4.jpg" alt="Collab – Online Learning Platform">
+                    </div>
+                  </div>
+                  <div class="child_image image_wrap_4">
+                    <div class="layer" data-depth="0.4">
+                      <img src="assets/images/banner/hero_banner_img_5.jpg" alt="Collab – Online Learning Platform">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Banner Section - End
+        ================================================== -->
+
+
+        <!-- Banner Test Section - Start
+        ================================================== -->
+        <!-- <section class="hero_banner style_2 mouse_move testimonial_carousel" style="background-image: url('assets/images/shape/shape_img_6.svg');"> -->
+
+        
+          <!-- test -->
+          <section class="testimonial_carousel">
+            <div class="common_carousel_1col " data-cursor-text="Drag" data-slick='{"dots":false}'>
+              <div class="carousel_item">
+                <div class="testimonial_item">
+                <!-- Banner 1 Section - Start == -->
+        
+                  <section class="hero_banner style_2 mouse_move testimonial_carousel w-100">
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col col-lg-6">
+                          <h1 class="banner_big_title text-blue">
+                            <span class="highlight-word text-blue">Teman kewangan</span> setia anda!
+                          </h1>
+                          <p class="banner_description">
+                            kembangkan ilmu kewangan anda & melangkah ke arah bijak kewangan bersama-sama. 
+                          </p>
+                          <div class="btn_wrap pt-0 justify-content-end">
+                            <a class="btn border_green" href="about.html">
+                              <span>
+                                <small>Ketahui Lebih Lanjut</small>
+                                <small>Ketahui Lebih Lanjut</small>
+                              </span>
+                            </a>
+                          </div>
+                        
+                        </div>
+                        <div class="col col-lg-6">
+                          <div class="banner_image_2">
+                            <div class="image_wrap_1">
+                              <div class="layer" data-depth="0.1">
+                                <img src="assets/images/hero_cat.png" alt="Collab – Online Learning Platform">
+                              </div>
+                            </div>
+                            <div class="child_image image_wrap_2">
+                              <div class="layer" data-depth="0.3">
+                                <img src="assets/images/Squiggle.png" alt="Collab – Online Learning Platform">
+                              </div>
+                            </div>
+                            <div class="child_image image_wrap_3">
+                              <div class="layer" data-depth="0.2">
+                                <img src="assets/images/Squiggle.png" alt="Collab – Online Learning Platform">
+                              </div>
+                            </div>
+                            <div class="child_image image_wrap_4">
+                              <div class="layer" data-depth="0.4">
+                                <img src="assets/images/Squiggle.png" alt="Collab – Online Learning Platform">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- Banner 1 Section - end === -->
+        
+                </div>
+              </div>
+              <div class="carousel_item">
+                <div class="testimonial_item">
+                  <!-- Banner 2 Section - Start == -->
+              
+                  <section class="hero_banner style_2 mouse_move testimonial_carousel w-100">
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col col-lg-6">
+                          <h1 class="banner_big_title">
+                            loanbuddy, teman kewangan anda!
+                          </h1>
+                          <p class="banner_description">
+                            kembangkan ilmu kewangan anda & melangkah ke arah bijak kewangan bersama-sama. 
+                          </p>
+                        
+                        </div>
+                        <div class="col col-lg-6">
+                          <div class="banner_image_2">
+                            <div class="image_wrap_1">
+                              <div class="layer" data-depth="0.1">
+                                <img src="assets/images/dumbell.png" alt="Collab – Online Learning Platform">
+                              </div>
+                            </div>
+                            <div class="child_image image_wrap_2">
+                              <div class="layer" data-depth="0.3">
+                                <img src="assets/images/Squiggle.png" alt="Collab – Online Learning Platform">
+                              </div>
+                            </div>
+                            <div class="child_image image_wrap_3">
+                              <div class="layer" data-depth="0.2">
+                                <img src="assets/images/Squiggle.png" alt="Collab – Online Learning Platform">
+                              </div>
+                            </div>
+                            <div class="child_image image_wrap_4">
+                              <div class="layer" data-depth="0.4">
+                                <img src="assets/images/Squiggle.png" alt="Collab – Online Learning Platform">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- Banner 2 Section - end === -->
+
+                </div>
+              </div>
+              <div class="carousel_item">
+                <div class="testimonial_item">
+                 <!-- Banner 3 Section - Start == -->
+              
+                 <section class="hero_banner style_2 mouse_move testimonial_carousel w-100">
+                  <div class="container">
+                    <div class="row align-items-center">
+                      <div class="col col-lg-6">
+                        <h1 class="banner_big_title">
+                          loanbuddy, teman kewangan anda!
+                        </h1>
+                        <p class="banner_description">
+                          kembangkan ilmu kewangan anda & melangkah ke arah bijak kewangan bersama-sama. 
+                        </p>
+                      
+                      </div>
+                      <div class="col col-lg-6">
+                        <div class="banner_image_2">
+                          <div class="image_wrap_1">
+                            <div class="layer" data-depth="0.1">
+                              <img src="assets/images/money_bag.png" alt="Collab – Online Learning Platform">
+                            </div>
+                          </div>
+                          <!-- <div class="child_image image_wrap_2">
+                            <div class="layer" data-depth="0.3">
+                              <img src="assets/images/Squiggle.png" alt="Collab – Online Learning Platform">
+                            </div>
+                          </div> -->
+                          <div class="child_image image_wrap_3">
+                            <div class="layer" data-depth="0.2">
+                              <img src="assets/images/Squiggle.png" alt="Collab – Online Learning Platform">
+                            </div>
+                          </div>
+                          <div class="child_image image_wrap_4">
+                            <div class="layer" data-depth="0.4">
+                              <img src="assets/images/Squiggle.png" alt="Collab – Online Learning Platform">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- Banner 3 Section - end === -->
+                </div>
+              </div>
+              <!-- <div class="carousel_item">
+                <div class="testimonial_item">
+                  <div class="testimonial_image">
+                    <img src="assets/images/testimonial/testimonial_img_2.jpg" alt="Collab – Online Learning Platform">
+                  </div>
+                  <div class="testimonial_content">
+                    <ul class="rating_star unordered_list">
+                      <li class="active"><i class="fas fa-star"></i></li>
+                      <li class="active"><i class="fas fa-star"></i></li>
+                      <li class="active"><i class="fas fa-star"></i></li>
+                      <li class="active"><i class="fas fa-star"></i></li>
+                      <li class="active"><i class="fas fa-star"></i></li>
+                    </ul>
+                    <h3 class="testimonial_title">Very interesting course</h3>
+                    <p>
+                      Elit ut aliquam purus sit amet luctus venenatis lectus magna. Sed nisi lacus sed viverra tellus in hac habitasse platea
+                    </p>
+                    <h4 class="testimonial_designation">Course: Academic Information Seeking</h4>
+                    <h5 class="testimonial_name">Nahia Colunga</h5>
+                    <span class="quote_icon">
+                      <i class="fas fa-quote-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <div class="carousel_arrow d-lg-none d-flex justify-content-center">
+              <button type="button" class="cc2c_left_arrow">
+                <i class="far fa-arrow-left"></i>
+                <i class="far fa-arrow-left"></i>
+              </button>
+              <button type="button" class="cc2c_right_arrow">
+                <i class="far fa-arrow-right"></i>
+                <i class="far fa-arrow-right"></i>
+              </button>
+            </div>
+          </section>
+          <!----- test end ------->
+          
+                    
+                  <!-- </section> -->
+                  <!-- Banner Section - End
+                  ================================================== -->
+                  
+        <!-- Blog Section - Start
+        ================================================== -->
+        <section class="blog_section section_space_lg">
+          <div class="container">
+            <div class="section_heading">
+              <div class="row align-items-center">
+                <div class="col col-lg-5">
+                  <h2 class="heading_text mb-0 text-blue">
+                    Sumber & blog
+                  </h2>
+                </div>
+                <div class="col col-lg-7 d-none d-lg-flex justify-content-end">
+                  <div class="btn_wrap p-0">
+                    <a class="btn border_blue" href="blog.html">
+                      <span>
+                        <small>Artikel Lain</small>
+                        <small>Artikel Lain</small>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col col-lg-4">
+                <div class="blog_item">
+                  <!-- <ul class="item_category_list unordered_list">
+                    <li><a href="#!">Pinjaman</a></li>
+                  </ul> -->
+                  <div class="item_image">
+                    <a href="blog_details.html" data-cursor-text="View">
+                      <img src="assets/images/blog-1.png" alt="Collab – Online Learning Platform">
+                    </a>
+                  </div>
+                  <div class="item_content">
+                    <h3 class="item_title">
+                      <a href="blog_details.html">
+                        6 Aspek Utama Literasi Kewangan
+                      </a>
+                    </h3>
+                    <a class="btn_unfill" href="blog_details.html">
+                      <span class="btn_text">Baca Artikel</span>
+                      <span class="btn_icon">
+                        <i class="fas fa-long-arrow-right"></i>
+                        <i class="fas fa-long-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-4">
+                <div class="blog_item">
+                  <!-- <ul class="item_category_list unordered_list">
+                    <li><a href="#!">Pinjaman</a></li>
+                  </ul> -->
+                  <div class="item_image">
+                    <a href="blog_details.html" data-cursor-text="View">
+                      <img src="assets/images/blog-2.png" alt="Collab – Online Learning Platform">
+                    </a>
+                  </div>
+                  <div class="item_content">
+                    <h3 class="item_title">
+                      <a href="blog_details.html">
+                        Tahap Pengetahuan Kewangan dalam kalangan rakyat Malaysia
+                      </a>
+                    </h3>
+                    <a class="btn_unfill" href="blog_details.html">
+                      <span class="btn_text">Baca Artikel</span>
+                      <span class="btn_icon">
+                        <i class="fas fa-long-arrow-right"></i>
+                        <i class="fas fa-long-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-4">
+                <div class="blog_item">
+                  <!-- <ul class="item_category_list unordered_list">
+                    <li><a href="#!">Kewangan</a></li>
+                  </ul> -->
+                  <div class="item_image">
+                    <a href="blog_details.html" data-cursor-text="View">
+                      <img src="assets/images/blog-3.png" alt="Collab – Online Learning Platform">
+                    </a>
+                  </div>
+                  <div class="item_content">
+                    <h3 class="item_title">
+                      <a href="blog_details.html">
+                        Definisi Moratorium
+                      </a>
+                    </h3>
+                    <a class="btn_unfill" href="blog_details.html">
+                      <span class="btn_text">Baca Artikel</span>
+                      <span class="btn_icon">
+                        <i class="fas fa-long-arrow-right"></i>
+                        <i class="fas fa-long-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn_wrap d-block d-lg-none pb-0 text-center">
+              <a class="btn border_dark" href="blog.html">
+                <span>
+                  <small>All Articles</small>
+                  <small>All Articles</small>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- Blog Section - End
+        ================================================== -->
+
+        <!-- Courses Section - Start
+        ================================================== -->
+        <section class="courses_section section_space_lg bg_blue">
+          <div class="container">
+            <div class="section_heading">
+              <div class="row align-items-center">
+                <div class="col col-md-6">
+                  <h2 class="heading_text mb-0 text-white">
+                   Perkhidmatan kami
+                  </h2>
+                </div>
+                <!-- <div class="col col-md-6 d-none d-lg-flex justify-content-end">
+                  <div class="btn_wrap p-0">
+                    <a class="btn border_light" href="course.html">
+                      <span>
+                        <small>Ketahui Lebih Lanjut</small>
+                        <small>Ketahui Lebih Lanjut</small>
+                      </span>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col col-lg-6 bg_blue">
+                <div class="course_card style_2">
+                  <div class="item_image">
+                    <a href="course_details.html" data-cursor-text="View">
+                      <img src="assets/images/loanfit1 1.png" alt="Collab – Online Learning Platform">
+                    </a>
+                  </div>
+                  <div class="item_content">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                      <ul class="item_category_list unordered_list">
+                        <li><a href="#!">LOANFIT</a></li>
+                      </ul>
+                      <!-- <div class="item_price">
+                        <span class="sale_price">$29.99</span>
+                        <del class="remove_price">$39.99</del>
+                      </div> -->
+                    </div>
+                    <ul class="meta_info_list unordered_list">
+                      <!-- <li>
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Beginner</span>
+                      </li> -->
+                      <!-- <li>
+                        <i class="fas fa-clock"></i>
+                        <span>120 Hours</span>
+                      </li> -->
+                      <li>
+                        <i class="fas fa-star"></i>
+                        <span>3.5 (3k reviews)</span>
+                      </li>
+                    </ul>
+                    <h3 class="item_title">
+                      <a href="course_details.html">
+                        LoanFit - <i>fitness</i> kewangan anda
+                      </a>
+                    </h3>
+                    <a class="btn_unfill" href="course_details.html">
+                      <span class="btn_text">Info Lanjut</span>
+                      <span class="btn_icon">
+                        <i class="fas fa-long-arrow-right"></i>
+                        <i class="fas fa-long-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-lg-6 bg_blue">
+                <div class="course_card style_2">
+                  <div class="item_image">
+                    <a href="course_details.html" data-cursor-text="View">
+                      <img src="assets/images/loancompare1 1.png" alt="Collab – Online Learning Platform">
+                    </a>
+                  </div>
+                  <div class="item_content">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                      <ul class="item_category_list unordered_list">
+                        <li><a href="#!">LoanCompare</a></li>
+                      </ul>
+                      <!-- <div class="item_price">
+                        <span class="sale_price">$9.99</span>
+                      </div> -->
+                    </div>
+                    <ul class="meta_info_list unordered_list">
+                      <!-- <li>
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Beginner</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-clock"></i>
+                        <span>120 Hours</span>
+                      </li> -->
+                      <li>
+                        <i class="fas fa-star"></i>
+                        <span>3.5 (3k reviews)</span>
+                      </li>
+                    </ul>
+                    <h3 class="item_title">
+                      <a href="course_details.html">
+                        LoanCompare - perbandingan komprehensif
+                      </a>
+                    </h3>
+                    <a class="btn_unfill" href="course_details.html">
+                      <span class="btn_text">Info Lanjut</span>
+                      <span class="btn_icon">
+                        <i class="fas fa-long-arrow-right"></i>
+                        <i class="fas fa-long-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="col col-lg-4 bg_blue">
+                <div class="course_card style_2">
+                  <div class="item_image">
+                    <a href="course_details.html" data-cursor-text="View">
+                      <img src="assets/images/course/course_image_6.jpg" alt="Collab – Online Learning Platform">
+                    </a>
+                  </div>
+                  <div class="item_content">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                      <ul class="item_category_list unordered_list">
+                        <li><a href="#!">Sumber</a></li>
+                      </ul>
+                    </div>
+                    <ul class="meta_info_list unordered_list">
+                      
+                      <li>
+                        <i class="fas fa-star"></i>
+                        <span>3.5 (3k reviews)</span>
+                      </li>
+                    </ul>
+                    <h3 class="item_title">
+                      <a href="course_details.html">
+                        Dapatkan tip-tip kewangan anda
+                      </a>
+                    </h3>
+                    <a class="btn_unfill" href="course_details.html">
+                      <span class="btn_text">Ketahui Lagi</span>
+                      <span class="btn_icon">
+                        <i class="fas fa-long-arrow-right"></i>
+                        <i class="fas fa-long-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <!-- appear in mobile view -->
+            <!-- <div class="btn_wrap d-block d-lg-none pb-0 text-center">
+              <a class="btn border_light" href="course.html">
+                <span>
+                  <small>Ketahui Lebih Lanjut</small>
+                  <small>Ketahui Lebih Lanjut</small>
+                </span>
+              </a>
+            </div> -->
+          </div>
+        </section>
+        <!-- Courses Section - End
+        ================================================== -->
+
+
+
+        <!-- Why loanbuddy - Start
+        ================================================== -->
+        <section class="intro_video_section section_space_lg bg_yellow overflow-hidden decoration_wrap">
+          <div class="container position-relative">
+            <!-- <div class="section_heading text-center">
+              <h2 class="heading_text mb-0">
+                Kenapa Mesti LoanBuddy?
+              </h2>
+            </div> -->
+            <!-- <div class="intro_video">
+              <div class="video_wrap tilt">
+                <img src="assets/images/video/video_poster_1.jpg" alt="Collab – Online Learning Platform">
+                <a class="video_play_btn popup_video" href="https://www.youtube.com/watch?v=7e90gBu4pas">
+                  <span class="icon"><i class="fas fa-play"></i></span>
+                </a>
+              </div>
+            </div> -->
+            <div class="row">
+              <div class="col col-lg-6">
+                <div class="section_heading">
+                  <h2 class="heading_text text-blue">
+                    Kenapa mesti <span class="text-green">loanbuddy</span>?
+                  </h2>
+                  <p class="heading_description mb-0">
+                    Rutrum tellus pellentesque eu tincidunt. Venenatis cras sed felis eget velit aliquet sagittis id consectetur
+                  </p>
+                </div>
+
+                <!-- <div class="image_widget">
+                  <img src="assets/images/about/about_image_1.jpg" alt="Collab – Online Learning Platform">
+                </div> -->
+              </div>
+              <div class="col col-lg-6">
+                <!-- Button will hide on Mobile Device -->
+                <div class="btn_wrap pt-0 d-none d-lg-flex justify-content-end">
+                  <a class="btn border_blue" href="about.html">
+                    <span>
+                      <small>Ketahui Lebih Lanjut</small>
+                      <small>Ketahui Lebih Lanjut</small>
+                    </span>
+                  </a>
+                </div>
+
+                <div class="row">
+                  <div class="col col-md-6">
+                    <div class="service_item" data-magnetic>
+                      <div class="item_icon">
+                        <img src="assets/images/Telus.png" alt="Telus Icon">
+                      </div>
+                      <div class="item_content">
+                        <h3 class="item_title">Telus</h3>
+                        <p class="mb-0">
+                          Duis aute irure dolor in repreh in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-md-6">
+                    <div class="service_item" data-magnetic>
+                      <div class="item_icon">
+                        <img src="assets/images/Perbandingan 1.png" alt="Compare Icon">
+                      </div>
+                      <div class="item_content">
+                        <h3 class="item_title">Perbandingan Komprehensif</h3>
+                        <p class="mb-0">
+                          Libero nunc consequat interd varius sit amet mattis vulpute
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-md-6">
+                    <div class="service_item" data-magnetic>
+                      <div class="item_icon">
+                        <img src="assets/images/Mesra-Pengguna.png" alt="Mesra Icon">
+                      </div>
+                      <div class="item_content">
+                        <h3 class="item_title">Mesra Pengguna</h3>
+                        <p class="mb-0">
+                          Vulputate enim nulla aliquet porttitor lacus luctus accums. Cras sed felis eget velit
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-md-6">
+                    <div class="service_item" data-magnetic>
+                      <div class="item_icon">
+                        <img src="assets/images/Kredibel.png" alt="Kredibel Icon">
+                      </div>
+                      <div class="item_content">
+                        <h3 class="item_title">Kredibel</h3>
+                        <p class="mb-0">
+                          Excepteur sint occaecat cupid non proident, sunt in culpa qui officia deserunt 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Button will show on Mobile Device -->
+                <div class="btn_wrap pb-0 d-block d-lg-none text-center">
+                  <a class="btn border_blue" href="course.html">
+                    <span>
+                      <small>Ketahui Lebih Lanjut</small>
+                      <small>Ketahui Lebih Lanjut</small>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="deco_item shape_img_1" data-parallax='{"y" : 130, "smoothness": 6}'>
+              <img src="assets/images/shape/shape_img_7.png" alt="Collab – Online Learning Platform">
+            </div>
+            <!-- literasi png -->
+            <div class="deco_item shape_img_2 d-none d-lg-flex" data-parallax='{"y" : -70, "smoothness": 6}'>
+              <img src="assets/images/shape/Literasi-utk.png" alt="Collab – Online Learning Platform">
+            </div>
+          </div>
+          <div class="deco_item shape_img_3" data-parallax='{"y" : -150, "smoothness": 6}'>
+            <img src="assets/images/shape/shape_img_7.png" alt="Collab – Online Learning Platform">
+          </div>
+        </section>
+        <!-- loanbuddy - End
+        ================================================== -->
+
+        <!-- Process Section - Start
+        ================================================== -->
+        <!-- <section class="process_section section_space_lg pb-0">
+          <div class="container">
+            <div class="section_heading text-center">
+              <div class="row justify-content-center">
+                <div class="col col-lg-9">
+                  <h2 class="heading_text mb-0">
+                    The Collab Team with High Technical Skills Help You Learn a New Profession
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-lg-3 col-md-6 col-sm-6">
+                <div class="iconbox_item">
+                  <div class="serial_number">01</div>
+                  <hr>
+                  <div class="title_wrap">
+                    <h3 class="item_title mb-0">
+                      Theoretical Knowledge
+                    </h3>
+                  </div>
+                  <p class="mb-0">
+                    Etiam sit amet nisl purus in mollis nunc sed. Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat
+                  </p>
+                </div>
+              </div>
+              <div class="col col-lg-3 col-md-6 col-sm-6">
+                <div class="iconbox_item">
+                  <div class="serial_number">02</div>
+                  <hr>
+                  <div class="title_wrap">
+                    <h3 class="item_title mb-0">
+                      Practical Skills
+                    </h3>
+                  </div>
+                  <p class="mb-0">
+                    Sed blandit libero volutpat sed cras ornare. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque
+                  </p>
+                </div>
+              </div>
+              <div class="col col-lg-3 col-md-6 col-sm-6">
+                <div class="iconbox_item">
+                  <div class="serial_number">03</div>
+                  <hr>
+                  <div class="title_wrap">
+                    <h3 class="item_title mb-0">
+                      Work with a Mentor
+                    </h3>
+                  </div>
+                  <p class="mb-0">
+                    Tellus id interdum velit laoreet id donec. Id interdum velit laoreet id donec ultrices tincidunt arcu
+                  </p>
+                </div>
+              </div>
+              <div class="col col-lg-3 col-md-6 col-sm-6">
+                <div class="iconbox_item">
+                  <div class="serial_number">04</div>
+                  <hr>
+                  <div class="title_wrap">
+                    <h3 class="item_title mb-0">
+                      Final Test or Project
+                    </h3>
+                  </div>
+                  <p class="mb-0">
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Magna fringilla urna porttitor
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <!-- Process Section - End
+        ================================================== -->
+
+        <!-- Testimonial Section - Start
+        ================================================== -->
+        <section class="testimonial_section section_space_lg">
+          <div class="container">
+            <div class="section_heading">
+              <div class="row align-items-center">
+                <div class="col col-lg-7">
+                  <h2 class="heading_text mb-0">
+                    Apa kata pelanggan <span class="text-green">loanbuddy</span>?
+                  </h2>
+                </div>
+                <div class="col col-lg-5 d-lg-flex d-none justify-content-end">
+                  <div class="carousel_arrow">
+                    <button type="button" class="cc2c_left_arrow">
+                      <i class="far fa-arrow-left"></i>
+                      <i class="far fa-arrow-left"></i>
+                    </button>
+                    <button type="button" class="cc2c_right_arrow">
+                      <i class="far fa-arrow-right"></i>
+                      <i class="far fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial_carousel">
+              <div class="common_carousel_2col" data-cursor-text="Drag" data-slick='{"dots":false}'>
+                <div class="carousel_item">
+                  <div class="testimonial_item">
+                    <!-- <div class="testimonial_image">
+                      <img src="assets/images/testimonial/testimonial_img_1.jpg" alt="Collab – Online Learning Platform">
+                    </div> -->
+                    <div class="testimonial_content">
+                      <ul class="rating_star unordered_list">
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                      </ul>
+                      <h3 class="testimonial_title">Staff sangat prihatin</h3>
+                      <p>
+                        Staf sangat membantu dan soalan saya semua dijawab dengan penuh kesabaran dan boleh nampak staf tau apa yang dia nak sampaikan.
+                      </p>
+                      <!-- <h4 class="testimonial_designation">Course: Academic Information Seeking</h4> -->
+                      <h5 class="testimonial_name">Encik Samsudin
+
+                      </h5>
+                      <span class="quote_icon">
+                        <i class="fas fa-quote-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel_item">
+                  <div class="testimonial_item">
+                    <!-- <div class="testimonial_image">
+                      <img src="assets/images/testimonial/testimonial_img_2.jpg" alt="Collab – Online Learning Platform">
+                    </div> -->
+                    <div class="testimonial_content">
+                      <ul class="rating_star unordered_list">
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                      </ul>
+                      <h3 class="testimonial_title">Sgt efisien</h3>
+                      <p>
+                        Sgt efisien dr segi kelulusan. Sentiasa bagi update. 
+                      </p>
+                      <!-- <h4 class="testimonial_designation">Course: Academic Information Seeking</h4> -->
+                      <h5 class="testimonial_name">Fatimah binti Said</h5>
+                      <span class="quote_icon">
+                        <i class="fas fa-quote-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel_item">
+                  <div class="testimonial_item">
+                    <!-- <div class="testimonial_image">
+                      <img src="assets/images/testimonial/testimonial_img_1.jpg" alt="Collab – Online Learning Platform">
+                    </div> -->
+                    <div class="testimonial_content">
+                      <ul class="rating_star unordered_list">
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                      </ul>
+                      <h3 class="testimonial_title">Good customer service</h3>
+                      <p>
+                        The process is very fast... and friendly staff.. they will guide from a-z so no need worry bc they will not leave u hanging. answer many questions quite good..
+                      </p>
+                      <!-- <h4 class="testimonial_designation">Course: Academic Information Seeking</h4> -->
+                      <h5 class="testimonial_name">Mr. Wong</h5>
+                      <span class="quote_icon">
+                        <i class="fas fa-quote-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="carousel_item">
+                  <div class="testimonial_item">
+                    <div class="testimonial_image">
+                      <img src="assets/images/testimonial/testimonial_img_2.jpg" alt="Collab – Online Learning Platform">
+                    </div>
+                    <div class="testimonial_content">
+                      <ul class="rating_star unordered_list">
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                        <li class="active"><i class="fas fa-star"></i></li>
+                      </ul>
+                      <h3 class="testimonial_title">Very interesting course</h3>
+                      <p>
+                        Elit ut aliquam purus sit amet luctus venenatis lectus magna. Sed nisi lacus sed viverra tellus in hac habitasse platea
+                      </p>
+                      <h4 class="testimonial_designation">Course: Academic Information Seeking</h4>
+                      <h5 class="testimonial_name">Nahia Colunga</h5>
+                      <span class="quote_icon">
+                        <i class="fas fa-quote-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <div class="carousel_arrow d-lg-none d-flex justify-content-center">
+                <button type="button" class="cc2c_left_arrow">
+                  <i class="far fa-arrow-left"></i>
+                  <i class="far fa-arrow-left"></i>
+                </button>
+                <button type="button" class="cc2c_right_arrow">
+                  <i class="far fa-arrow-right"></i>
+                  <i class="far fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Testimonial Section - End
+        ================================================== -->
+
+        <!-- Testimonial Section(Original)- Start
+        ================================================== -->
+        <!-- <section class="testimonial_section section_space_lg">
+          <div class="container">
+            <div class="section_heading text-center">
+              <h2 class="heading_text mb-0">
+               Apa Kata Pelanggan loanbuddy?
+              </h2>
+            </div>
+            <div class="testimonial_carousel">
+              <div class="common_carousel_1col" data-cursor-text="Drag" data-slick='{"dots":false}'>
+                <div class="carousel_item">
+                  <div class="testimonial_item_2">
+                    <div class="testimonial_image ms-0" style="background-image: url('assets/images/shape/shape_img_6.svg');">
+                      <img src="assets/images/testimonial/testimonial_img_3.png" alt="Collab – Online Learning Platform">
+                    </div>
+                    <div class="testimonial_content">
+                      <div class="quote_icon">
+                        <img src="assets/images/icon/icon_quote.svg" alt="Collab – Online Learning Platform">
+                      </div>
+                      <h3 class="testimonial_title">
+                        Et netus et malesuada fames ac turpis egestas sed. Nec feugiat nisl pretium fusce id velit ut. Lobortis mattis aliquam faucibus purus in. Ultricies integer quis auctor elit sed. Lobortis scelerisque fermentum dui faucibus in ornare quam. In mollis nunc sed semper
+                      </h3>
+                      <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Et netus et malesuada fames ac turpis egestas
+                      </p>
+                      <div class="testimonial_admin">
+                        <div class="admin_image">
+                          <img src="assets/images/meta/testimonial_thumbnail_1.jpg" alt="Collab – Online Learning Platform">
+                        </div>
+                        <div class="admin_content">
+                          <h5 class="testimonial_name">Ray Cooper</h5>
+                          <span class="testimonial_designation">Founder of colab courses, lecturer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel_item">
+                  <div class="testimonial_item_2">
+                    <div class="testimonial_image ms-0" style="background-image: url('assets/images/shape/shape_img_6.svg');">
+                      <img src="assets/images/testimonial/testimonial_img_3.png" alt="Collab – Online Learning Platform">
+                    </div>
+                    <div class="testimonial_content">
+                      <div class="quote_icon">
+                        <img src="assets/images/icon/icon_quote.svg" alt="Collab – Online Learning Platform">
+                      </div>
+                      <h3 class="testimonial_title">
+                        Et netus et malesuada fames ac turpis egestas sed. Nec feugiat nisl pretium fusce id velit ut. Lobortis mattis aliquam faucibus purus in. Ultricies integer quis auctor elit sed. Lobortis scelerisque fermentum dui faucibus in ornare quam. In mollis nunc sed semper
+                      </h3>
+                      <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Et netus et malesuada fames ac turpis egestas
+                      </p>
+                      <div class="testimonial_admin">
+                        <div class="admin_image">
+                          <img src="assets/images/meta/testimonial_thumbnail_1.jpg" alt="Collab – Online Learning Platform">
+                        </div>
+                        <div class="admin_content">
+                          <h5 class="testimonial_name">Ray Cooper</h5>
+                          <span class="testimonial_designation">Founder of colab courses, lecturer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel_item">
+                  <div class="testimonial_item_2">
+                    <div class="testimonial_image ms-0" style="background-image: url('assets/images/shape/shape_img_6.svg');">
+                      <img src="assets/images/testimonial/testimonial_img_3.png" alt="Collab – Online Learning Platform">
+                    </div>
+                    <div class="testimonial_content">
+                      <div class="quote_icon">
+                        <img src="assets/images/icon/icon_quote.svg" alt="Collab – Online Learning Platform">
+                      </div>
+                      <h3 class="testimonial_title">
+                        Et netus et malesuada fames ac turpis egestas sed. Nec feugiat nisl pretium fusce id velit ut. Lobortis mattis aliquam faucibus purus in. Ultricies integer quis auctor elit sed. Lobortis scelerisque fermentum dui faucibus in ornare quam. In mollis nunc sed semper
+                      </h3>
+                      <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Et netus et malesuada fames ac turpis egestas
+                      </p>
+                      <div class="testimonial_admin">
+                        <div class="admin_image">
+                          <img src="assets/images/meta/testimonial_thumbnail_1.jpg" alt="Collab – Online Learning Platform">
+                        </div>
+                        <div class="admin_content">
+                          <h5 class="testimonial_name">Ray Cooper</h5>
+                          <span class="testimonial_designation">Founder of colab courses, lecturer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <!-- Testimonial Section - End
+        ================================================== -->
+
+        <!-- Call To Action Section - Start
+        ================================================== -->
+        <section class="calltoaction_section section_space_lg bg_blue decoration_wrap">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col col-lg-7">
+                <div class="section_heading mb-lg-0">
+                  <h2 class="heading_text text-white">
+                    Kira Pinjaman, <br>Jiwa Tenang!
+                  </h2>
+                  <p class="heading_description mb-0 text-white">
+                    Nak tahu berapa nak bayar setiap bulan? Guna Kalkulator Pinjaman kami! Masukkan jumlah yang nak pinjam, tempoh, dan kadar faedah – tak perlu pening kepala kira sendiri. Cepat-cepat kira, boleh terus rancang nak shopping apa lepas ni!
+                  </p>
+                </div>
+              </div>
+              <div class="col col-lg-5">
+                <div class="calltoaction_form">
+                  
+                  <!-- calculator function -->
+                  <div class="calculator w-100">
+                    <div class="loan-calculator">
+                      <div class="top w-100">
+                        <h3 class="form_title text-center">Kalkulator Pinjaman</h3>
+            
+                        <form action="#">
+                          <div class="group">
+                            <label class="title" id="textLoanAmount">Jumlah Pinjaman:</label>
+                            <div class="calc_output">
+                              <span>RM </span><input type="number" value="10000" class="loan-amount" id="mLoanShow2" readonly>
+                            </div>
+                            <input type="range" class="calc__input-range1" name="mLoan" id="mLoan" value="20000" min="1000"
+                              max="100000" step="1000" oninput="updateLoanAmount(this.value)"
+                              style="background: linear-gradient(to right, #044BD9 0%, #044BD9 20%, #d3d3d3 20%, #d3d3d3 100%)">
+                            <div class="calc__placeholders"> <span>RM1,000</span> <span>RM100,000</span></div>
+                          </div>
+            
+                          <div class="group">
+                            <label class="title" id="textTenure">Tempoh (dalam bulan):</label>
+                            <div class="calc_output">
+                              <input type="number" value="18" class="loan-tenure" id="mLoanShow3" readonly>
+                            </div>
+                            <input type="range" class="calc__input-range2" name="mLoan" id="mLoan3" value="18" min="6" max="84"
+                              step="6" oninput="updateLoanTenure(this.value)"
+                              style="background: linear-gradient(to right, #044BD9 0%, #044BD9 20%, #d3d3d3 20%, #d3d3d3 100%)">
+                            <div class="calc__placeholders"> <span>6 bulan</span> <span>84 bulan</span></div>
+                          </div>
+                        </form>
+                        <button class="calculate-btn">Calculate</button>
+                      </div>
+
+                      <!-- results -->
+                      <div class="row mt-20">
+                        <div class="col-6">
+                          <div class="loan-emi text-center">
+                            <h3 class="title" id="textYourMonthlyPayment">Bayaran Bulanan: </h3>
+                            <div class="value-container">
+                              <span>RM &nbsp;</span>
+                              <div class="value">706</div>
+                            </div>
+                          </div>
+                        </div>
+                          
+            
+                          <!-- <div class="total-interest">
+                            <h3 class="title">Interest Paid Per Month: </h3>
+                            <div class="value">1234</div>
+                          </div> -->
+                        <div class="col-6">
+                          <div class="total-amount text-center">
+                            <h3 class="title"><span id="textTotalAmountYouPay">Jumlah Bayaran &nbsp;</span><span
+                                class="loan-tenure-value" id="loanTenureInputDefault">18</span> &nbsp;<span
+                                id="textMonths">Bulan</span></h3>
+                            <div class="value-container">
+                              <span>RM &nbsp;</span>
+                              <div class="value">12700</div>
+                            </div>
+                          </div>
+                        </div>
+                          
+                      
+                      <!-- button -->
+                      
+                        
+                          <!-- <div class="left">
+                            <div class="loan-emi">
+                              <h3 class="title" id="textYourMonthlyPayment">Your Monthly Payment: </h3>
+                              <div class="value-container">
+                                <span>RM &nbsp;</span>
+                                <div class="value">706</div>
+                              </div>
+                            </div>
+              
+                            <div class="total-interest">
+                              <h3 class="title">Interest Paid Per Month: </h3>
+                              <div class="value">1234</div>
+                            </div>
+              
+                            <div class="total-amount">
+                              <h3 class="title"><span id="textTotalAmountYouPay">Total amount you pay in &nbsp;</span><span
+                                  class="loan-tenure-value" id="loanTenureInputDefault">18</span> &nbsp;<span
+                                  id="textMonths">months</span></h3>
+                              <div class="value-container">
+                                <span>RM &nbsp;</span>
+                                <div class="value">12700</div>
+                              </div>
+              
+                            </div> -->
+                            <!-- <button class="btn btn_dark w-100">
+                              <span>
+                                <small>Dapatkan Konsultasi</small>
+                                <small>Dapatkan Konsultasi</small>
+                              </span>
+                            </button> -->
+                            <!-- <div class="row"> -->
+                              <button class="btn btn_green w-100 mt-20">
+                                <span>
+                                  <small>Dapatkan Konsultasi</small>
+                                  <small>Dapatkan Konsultasi</small>
+                                </span>
+                              </button>
+                            <!-- </div> -->
+                        </div>
+                      
+                      <!-- <div class="result">
+                        <div class="left">
+                          <div class="loan-emi">
+                            <h3 class="title" id="textYourMonthlyPayment">Your Monthly Payment: </h3>
+                            <div class="value-container">
+                              <span>RM &nbsp;</span>
+                              <div class="value">706</div>
+                            </div>
+                          </div>
+            
+                          <div class="total-interest">
+                            <h3 class="title">Interest Paid Per Month: </h3>
+                            <div class="value">1234</div>
+                          </div>
+            
+                          <div class="total-amount">
+                            <h3 class="title"><span id="textTotalAmountYouPay">Total amount you pay in &nbsp;</span><span
+                                class="loan-tenure-value" id="loanTenureInputDefault">18</span> &nbsp;<span
+                                id="textMonths">months</span></h3>
+                            <div class="value-container">
+                              <span>RM &nbsp;</span>
+                              <div class="value">12700</div>
+                            </div>
+            
+                          </div>
+                          <button class="btn btn_dark w-100">
+                            <span>
+                              <small>Dapatkan Konsultasi</small>
+                              <small>Dapatkan Konsultasi</small>
+                            </span>
+                          </button>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                  <!-- <form action="#">
+                    <h3 class="form_title">Kalkulator Pinjaman</h3>
+                    <div class="form_item">
+                      <label for="input_name" class="input_title text-uppercase">Name</label>
+                      <input id="input_name" type="text" name="name" placeholder="Input Name">
+                    </div>
+                    <div class="form_item">
+                      <label for="input_email" class="input_title text-uppercase">Email</label>
+                      <input id="input_email" type="email" name="email" placeholder="Input Email">
+                    </div>
+                    <div class="form_item">
+                      <label for="input_question" class="input_title text-uppercase">Message</label>
+                      <textarea id="input_question" name="Message" placeholder="Input Your Question"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn_dark w-100">
+                      <span>
+                        <small>Dapatkan Konsultasi</small>
+                        <small>Dapatkan Konsultasi</small>
+                      </span>
+                    </button>
+                  </form> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- yg bawah here -->
+          <!-- <div class="deco_item shape_img_1" data-parallax='{"x" : -100, "smoothness": 6}'>
+            <img src="assets/images/shape/shape_img_5.png" alt="Collab – Online Learning Platform">
+            <img src="assets/images/Yellow-LB.png" alt="Collab – Online Learning Platform">
+          </div> -->
+          <!-- yg atas here -->
+          <div class="deco_item shape_img_2" data-parallax='{"x" : -100, "smoothness": 6}'>
+            <img src="assets/images/Yellow-LB.png" alt="Collab – Online Learning Platform">
+          </div>
+        </section>
+        <!-- Call To Action Section - End
+        ================================================== -->
+
+        <!-- Brands Section - Start
+        ================================================== -->
+        <!-- <section class="brands_section section_space_lg pb-0">
+          <div class="container">
+            <div class="section_heading text-center">
+              <h2 class="heading_text mb-0">
+                Where Our Graduates Work
+              </h2>
+            </div>
+            <ul class="brands_logo_list unordered_list">
+              <li>
+                <a href="#!">
+                  <img src="assets/images/brands/logo_microsoft.png" alt="Microsoft">
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="assets/images/brands/logo_alphabet.png" alt="Alphabet">
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="assets/images/brands/logo_intel.png" alt="Intel">
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="assets/images/brands/logo_cisco.png" alt="Cisco">
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="assets/images/brands/logo_verizon_communications.png" alt="Verizon Communications">
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="assets/images/brands/logo_infopulse.png" alt="Infopulse.png">
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="assets/images/brands/logo_amazon.png" alt="Amazon">
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="assets/images/brands/logo_wix_com_website.png" alt="Wix">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section> -->
+        <!-- Brands Section - End
+        ================================================== -->
+
+        <!-- Blog Section - Start
+        ================================================== -->
+        <!-- <section class="blog_section section_space_lg">
+          <div class="container">
+            <div class="section_heading">
+              <div class="row align-items-center">
+                <div class="col col-lg-5">
+                  <h2 class="heading_text mb-0">
+                    Blog Post Articles on Topical Issues
+                  </h2>
+                </div>
+                <div class="col col-lg-7 d-none d-lg-flex justify-content-end">
+                  <div class="btn_wrap p-0">
+                    <a class="btn border_dark" href="blog.html">
+                      <span>
+                        <small>All Articles</small>
+                        <small>All Articles</small>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col col-lg-4">
+                <div class="blog_item">
+                  <ul class="item_category_list unordered_list">
+                    <li><a href="#!">Photography</a></li>
+                  </ul>
+                  <div class="item_image">
+                    <a href="blog_details.html" data-cursor-text="View">
+                      <img src="assets/images/blog/blog_img_1.jpg" alt="Collab – Online Learning Platform">
+                    </a>
+                  </div>
+                  <div class="item_content">
+                    <h3 class="item_title">
+                      <a href="blog_details.html">
+                        The Top Technical Skills All Employees Need in 2023
+                      </a>
+                    </h3>
+                    <a class="btn_unfill" href="blog_details.html">
+                      <span class="btn_text">Read Articles</span>
+                      <span class="btn_icon">
+                        <i class="fas fa-long-arrow-right"></i>
+                        <i class="fas fa-long-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-4">
+                <div class="blog_item">
+                  <ul class="item_category_list unordered_list">
+                    <li><a href="#!">Photography</a></li>
+                  </ul>
+                  <div class="item_image">
+                    <a href="blog_details.html" data-cursor-text="View">
+                      <img src="assets/images/blog/blog_img_2.jpg" alt="Collab – Online Learning Platform">
+                    </a>
+                  </div>
+                  <div class="item_content">
+                    <h3 class="item_title">
+                      <a href="blog_details.html">
+                        The Best Graphic Design Careers  — for Beginners and Professionals
+                      </a>
+                    </h3>
+                    <a class="btn_unfill" href="blog_details.html">
+                      <span class="btn_text">Read Articles</span>
+                      <span class="btn_icon">
+                        <i class="fas fa-long-arrow-right"></i>
+                        <i class="fas fa-long-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-4">
+                <div class="blog_item">
+                  <ul class="item_category_list unordered_list">
+                    <li><a href="#!">Photography</a></li>
+                  </ul>
+                  <div class="item_image">
+                    <a href="blog_details.html" data-cursor-text="View">
+                      <img src="assets/images/blog/blog_img_3.jpg" alt="Collab – Online Learning Platform">
+                    </a>
+                  </div>
+                  <div class="item_content">
+                    <h3 class="item_title">
+                      <a href="blog_details.html">
+                        Ubuntu vs. Windows: Which OS Should You Use in 2023?
+                      </a>
+                    </h3>
+                    <a class="btn_unfill" href="blog_details.html">
+                      <span class="btn_text">Read Articles</span>
+                      <span class="btn_icon">
+                        <i class="fas fa-long-arrow-right"></i>
+                        <i class="fas fa-long-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn_wrap d-block d-lg-none pb-0 text-center">
+              <a class="btn border_dark" href="blog.html">
+                <span>
+                  <small>All Articles</small>
+                  <small>All Articles</small>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section> -->
+        <!-- Blog Section - End
+        ================================================== -->
+<!-- FAQ Section - Start
+        ================================================== -->
+        <section class="faq_section section_space_lg">
+          <div class="container">
+            <div class="section_heading text-center mb-3">
+              <div class="row justify-content-center">
+                <div class="col col-lg-7">
+                  <h2 class="heading_text text-blue">
+                    Soalan Lazim
+                  </h2>
+                  <!-- <p class="heading_description mb-0">
+                    Ada soalan? Kami ada jawapannya! Lihat Soalan Selalu Ditanya (FAQ) kami untuk semua maklumat yang anda perlukan. Dari proses permohonan hingga bayaran balik, semuanya ada di sini – siap untuk anda baca, tanpa perlu tanya banyak-banyak!
+                  </p> -->
+                  <p class="heading_description mb-0"></p>
+                    loanbuddy
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col col-lg-10">
+                <div class="accordion" id="faq_accordion_1">
+                  <div class="accordion-item">
+                    <div class="accordion-button text-green" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_one" aria-expanded="true">
+                      Apakah itu loanbuddy?
+                    </div>
+                    <div id="collapse_one" class="accordion-collapse collapse show" data-bs-parent="#faq_accordion_1">
+                      <div class="accordion-body">
+                        <p class="mb-0">
+                          loanbuddy merupakan platform untuk belajar asas kewangan dan keep up-to-date dengan isu kewangan semasa. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_two" aria-expanded="false">
+                      Adakah loanbuddy selamat untuk diguna?
+                    </div>
+                    <div id="collapse_two" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
+                      <div class="accordion-body">
+                        <p class="mb-0">
+                          Dictum non consectetur a erat. Odio morbi quis commodo odio aenean. Blandit libero volutpat sed cras ornare arcu. Tempus urna et pharetra pharetra. Enim ut sem viverra aliquet. Nisl vel pretium lectus quam id. Augue eget arcu dictum varius duis at consectetur. Egestas dui id ornare arcu. Nec ullamcorper sit amet risus nullam eget felis eget nunc.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapse_three" aria-expanded="false">
+                      Kenapa loanbuddy memberi laporan secara percuma?
+                    </div>
+                    <div id="collapse_three" class="accordion-collapse collapse" data-bs-parent="#faq_accordion_1">
+                      <div class="accordion-body">
+                        <p class="mb-0">
+                          Dictum non consectetur a erat. Odio morbi quis commodo odio aenean. Blandit libero volutpat sed cras ornare arcu. Tempus urna et pharetra pharetra. Enim ut sem viverra aliquet. Nisl vel pretium lectus quam id. Augue eget arcu dictum varius duis at consectetur. Egestas dui id ornare arcu. Nec ullamcorper sit amet risus nullam eget felis eget nunc.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </section>
+        <!-- FAQ Section - End
+        ================================================== -->
+
+        <!-- Newslatter Section - Start
+        ================================================== -->
+        <section class="newslatter_section  decoration_wrap">
+          <!-- yg bawah here -->
+          <div class="deco_item shape_img_3 d-none d-lg-flex" data-parallax='{"x" : 170, "smoothness": 6}'>
+            <!-- <img src="assets/images/shape/shape_img_5.png" alt="Collab – Online Learning Platform"> -->
+            <img src="assets/images/Green LB 1.png" alt="Collab – Online Learning Platform">
+          </div>
+          <div class="container">
+            <div class="newslatter_box bg_yellow" style="background-image: url('assets/images/shape/shape_img_6.svg');">
+              <div class="row justify-content-center">
+                <div class="col col-lg-6">
+                  <div class="section_heading text-center">
+                    <h2 class="heading_text">
+                      Perlu Bantuan? <br>Hubungi Kami!
+                    </h2>
+                    <p class="heading_description mb-0">
+                      Ada soalan atau perlukan maklumat lebih lanjut? Kami di sini untuk membantu. Klik butang di bawah untuk berhubung dengan kami melalui halaman hubungan kami!
+                    </p>
+                  </div>
+                  <form action="#">
+                    <div class="form_item m-0">
+                      <!-- <input type="email" name="email" placeholder="Your Email"> -->
+                      <button type="submit" class="btn btn_green">
+                        <span>
+                          <small>Hubungi Kami</small>
+                          <small>Hubungi Kami</small>
+                        </span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="deco_item shape_img_1 d-none d-lg-flex" data-parallax='{"x" : 0, "smoothness": 6}'>
+                <!-- <img src="assets/images/shape/shape_img_5.png" alt="Collab – Online Learning Platform"> -->
+                <img src="assets/images/shape/Patterns.png" alt="Collab – Online Learning Platform">
+              </div>
+            </div>
+            
+          </div>
+          <!-- yg bawah here -->
+          <!-- <div class="deco_item shape_img_5" data-parallax='{"x" : 1000, "smoothness": 6}'>
+            <img src="assets/images/Green LB 1.png" alt="Collab – Online Learning Platform">
+          </div> -->
+        </section>
+        <!-- Newslatter Section - End
+        ================================================== -->
+
+      </main>
+      <!-- Main Body - End
+      ================================================== -->
+
+      <!-- Site Footer - Start
+      ================================================== -->
+      <footer class="site_footer">
+        <div class="footer_widget_area">
+          <div class="container">
+            <div class="row">
+              <div class="col col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_widget">
+                  <div class="site_logo">
+                    <a class="site_link" href="index.html">
+                      <!-- <img src="assets/images/logo/site_logo_2.svg" alt="loanbuddy l- teman kewangan anda"> -->
+                       <img src="assets/images/logo/Logo White.png" alt="">
+                    </a>
+                  </div>
+                  <p>
+                    Ruangan perkongsian & perkembangan ilmu kewangan anda. Satu langkah mudah menuju ke arah bijak kewangan bersama loanbuddy!
+                  </p>
+                  <!-- <ul class="social_links unordered_list">
+                    <li>
+                      <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="fab fa-tiktok"></i></a>
+                    </li>
+                  </ul> -->
+
+                  <ul class="social_links unordered_list">
+                    <li>
+                      <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <!-- Embed TikTok SVG directly -->
+                      <a href="#!">
+                        <svg fill="#1F1D0D" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"/>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+              <div class="col col-lg-6">
+                <div class="row">
+                  <div class="col col-md-4 col-sm-4">
+                    <div class="footer_widget">
+                      <h3 class="footer_widget_title">Pautan</h3>
+                      <ul class="page_list unordered_list_block">
+                        <li>
+                          <a href="index_2.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Laman Utama</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="about.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Tentang Kami</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="contact.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Hubungi Kami</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="blog.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Sumber & Blog</span>
+                          </a>
+                        </li>
+                        <!-- <li>
+                          <a href="event.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Events</span>
+                          </a>
+                        </li> -->
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col col-md-4 col-sm-4">
+                    <div class="footer_widget">
+                      <h3 class="footer_widget_title">Perkhidmatan</h3>
+                      <ul class="page_list unordered_list_block">
+                        <li>
+                          <a href="#!">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">LoanFit</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#!">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">LoanCompare</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#!">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Sumber & Blog</span>
+                          </a>
+                        </li>
+                        <!-- <li>
+                          <a href="#!">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Engineering</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#!">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Photography</span>
+                          </a>
+                        </li> -->
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col col-md-4 col-sm-4">
+                    <div class="footer_widget">
+                      <h3 class="footer_widget_title">Khidmat Pelanggan</h3>
+                      <ul class="page_list unordered_list_block">
+                        <li>
+                          <a href="contact.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Hubungi Kami</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="faq.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">FAQ</span>
+                          </a>
+                        </li>
+                        <!-- <li>
+                          <a href="contact.html">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Contacts</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#!">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Security</span>
+                          </a>
+                        </li> -->
+                        <li>
+                          <a href="#!">
+                            <span class="item_icon"><i class="fas fa-caret-right"></i></span>
+                            <span class="item_text">Dasar Privasi</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_widget">
+                  <h3 class="footer_widget_title">Blog Terkini</h3>
+                  <ul class="blog_small_group unordered_list_block">
+                    <li>
+                      <a class="blog_small" href="blog_details.html">
+                        <span class="item_image">
+                          <img src="assets/images/blog/Blog-1-small.png" alt="Blog 1">
+                        </span>
+                        <span class="item_content">
+                          <span class="item_author"><i class="fas fa-user-alt"></i> by Corabelle Durrad</span>
+                          <strong class="item_title">6 aspek utama literasi kewangan</strong>
+                          <!-- <small class="item_post_date">September 3, 2024</small> -->
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="blog_small" href="blog_details.html">
+                        <span class="item_image">
+                          <img src="assets/images/blog/Blog-2-small.png" alt="Collab – Online Learning Platform">
+                        </span>
+                        <span class="item_content">
+                          <span class="item_author"><i class="fas fa-user-alt"></i> by Corabelle Durrad</span>
+                          <strong class="item_title">Tahap Pengetahuan Kewangan dalam kalangan Rakyat Malaysia</strong>
+                          <!-- <small class="item_post_date">August 26, 2024</small> -->
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright_widget">
+          <div class="container">
+            <p class="copyright_text text-center mb-0">
+              loanbuddy © All rights reserved Copyrights 2023
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- Site Footer - End
+      ================================================== -->
+
+    </div>
+    <!-- Body Wrap - End -->
+
+    <!-- Framework - Jquery Include -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-dropdown-ml-hack.js"></script>
+
+    <!-- animation - jquery include -->
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tilt.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+
+    <!-- Carousel - Jquery Include -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Video & Image Popup - Jquery Include -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+
+    <!-- Counter Up - Jquery Include -->
+    <script src="assets/js/waypoint.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
+
+    <!-- Countdown Timer - jquery include -->
+    <script src="assets/js/countdown.js"></script>
+
+    <!-- Vanilla Calendar - Jquery Include -->
+    <script src="assets/js/vanilla-calendar.min.js"></script>
+
+    <!-- Custom - Jquery Include -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/calculator.js"></script>
+
+  </body>
+</html>
