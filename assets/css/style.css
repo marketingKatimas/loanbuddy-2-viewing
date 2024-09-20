@@ -1508,6 +1508,13 @@ color: #fff;
 
 /* End For Loan Calculator */
 
+/* custom logo height */
+/* .site_logo {
+  min-height: 30px; /* Limits the maximum height */
+  width: auto; /* Maintains aspect ratio */
+} */
+
+
 /* custom page height */
 .full-height-section {
   min-height: 100vh; /* Makes the section at least the height of the viewport */
@@ -1524,6 +1531,61 @@ color: #fff;
 .bg_translucent{
   background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent black */
 }
+
+/* .page_banner .about_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 520px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 115px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/White-Paper-Tear.png');
+} */
+
+.page_banner .about_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 520px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 115px;
+  background-size: cover; /* Updated to cover */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/White-Paper-Tear.png');
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .page_banner .about_wrapper {
+    padding: 50px 30px; /* Reduced padding for mobile */
+    min-height: 400px;  /* Adjusted height for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .page_banner .about_wrapper {
+    padding: 30px 15px; /* Further reduced padding for smaller screens */
+    min-height: 300px;  /* Further adjust height for small screens */
+  }
+}
+
+.bg_paper{
+  background-image: url('../images/cool_cat.png'); /* Replace with the path to your cat image */
+  background-position: bottom center; /* Position the image at the bottom center */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; /* Ensure the image scales to fit its container */
+  overflow: hidden; /* Prevent any overflow of the image */
+  padding-bottom: 100px; /* Add some padding to the bottom to make space for the cat image */
+}
+
 /* custom margin */
 .mt-20{
   margin-top: 2em;
