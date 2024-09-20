@@ -1508,11 +1508,10 @@ color: #fff;
 
 /* End For Loan Calculator */
 
-/* custom logo height */
-/* .site_logo {
-  min-height: 30px; /* Limits the maximum height */
-  width: auto; /* Maintains aspect ratio */
-} */
+/* custom padding */
+.pb-20{
+  padding-bottom: 20px;
+}
 
 
 /* custom page height */
@@ -1547,6 +1546,7 @@ color: #fff;
   background-image: url('../images/White-Paper-Tear.png');
 } */
 
+/* about page banner */
 .page_banner .about_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1577,8 +1577,17 @@ color: #fff;
   }
 }
 
-.bg_paper{
-  background-image: url('../images/cool_cat.png'); /* Replace with the path to your cat image */
+/* about page banner */
+ 
+/* banner index-2 adjust color */
+.register_section {
+  overflow: hidden;
+  padding: 152px 0 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #F9EC31;
+  background-position: center center;
+  background-image: url('../images/paper-tear-2.png'); /* Replace with the path to your cat image */
   background-position: bottom center; /* Position the image at the bottom center */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: contain; /* Ensure the image scales to fit its container */
@@ -1586,6 +1595,23 @@ color: #fff;
   padding-bottom: 100px; /* Add some padding to the bottom to make space for the cat image */
 }
 
+/* banner index-2 adjust color */
+.custom-img {
+  background-color: #F9EC31;
+  background-image: url('../images/cat-tba.png'); /* Path to your cat image */
+  background-position: bottom center; /* Ensure the image is positioned at the bottom center */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: contain; /* Scale the image to fit the container */
+  width: 100%; /* Make sure it takes up the full width of the column */
+  height: auto; /* Let the height adjust automatically based on the aspect ratio */
+  padding: 152px 0 100px; /* Padding adjustments */
+  overflow: hidden; /* Prevent overflow of content */
+}
+
+
+.custom-img .img{
+background-position: bottom;
+}
 /* custom margin */
 .mt-20{
   margin-top: 2em;
