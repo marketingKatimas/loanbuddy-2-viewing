@@ -1634,6 +1634,16 @@ color: #fff;
   overflow: hidden; /* Prevent overflow of content */
 }
 
+/* custom img-responsive */
+.img-responsive {
+  max-width: 100%;   /* Ensures the image scales down with the screen size */
+  max-height: 60vh;      /* Keeps the aspect ratio of the image */
+  object-fit: contain; /* Ensures the image scales within the container */
+}
+
+.text-indent{
+  text-indent: 30px;
+}
 
 .custom-img .img{
 background-position: bottom;
@@ -1671,6 +1681,20 @@ background-position: bottom;
  
 }
 
+/* custom cropped video */
+.video-wrapper {
+  width: 300px;   /* Desired width for the video */
+  height: 533px;  /* Adjust the height to match the video aspect ratio or desired crop */
+  overflow: hidden;  /* Hide the overflowing black bars */
+  position: relative; /* Ensure cropping is positioned correctly */
+}
+
+.cropped-video {
+  width: 100%;  /* Ensure the video fits within the wrapper */
+  height: 100%; /* Maintain height consistency */
+  object-fit: cover; /* This ensures the video content fills the area, cropping as needed */
+}
+
 /* custom transparency */
 .transparent{
   opacity: 0.4;
@@ -1704,6 +1728,8 @@ background-position: bottom;
   overflow: hidden;
 }
 
+
+
 /* custom shapes adjust */
 .about_banner .shape_img_4{
   bottom: 300px;
@@ -1713,8 +1739,8 @@ background-position: bottom;
 }
 
 .about_banner .shape_img_3{
-  top: -30px;
-  right: -200px;
+  top: 30px;
+  right: -20px;
   max-width: 148px;
   z-index: 10;
 }
