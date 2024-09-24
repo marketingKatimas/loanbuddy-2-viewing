@@ -35,6 +35,12 @@
     <!-- Custom - CSS Include -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <!-- Contact Form - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/contact-form.css">
+
+    <!-- Google Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdmCn0nAAAAANC8dQDeC3bko97zlloPkuFcyP7_"></script>
+
   </head>
 
 
@@ -265,33 +271,33 @@
                     </div>
                   </div> -->
       
-                  <form action="#">
+                  <form id="contactform">
                     <div class="row justify-content-center">
                       <div class="col w-100">
                         <div class="row">
                           <div class="col col-md-6">
                             <div class="form_item m-0">
-                              <label for="input_name" class="input_title">Nama</label>
-                              <input id="input_name" type="text" name="name" placeholder="Nama">
+                              <label for="label_name" class="input_title">Nama</label>
+                              <input id="name" type="text" name="name" placeholder="Nama" required>
                             </div>
                           </div>
                           
                           <div class="col col-md-6">
                             <div class="form_item m-0">
-                              <label for="input_phone" class="input_title">No. Telefon</label>
-                              <input id="input_phone" type="tel" name="telephone" placeholder="Nombor telefon">
+                              <label for="label_phone" class="input_title">No. Telefon</label>
+                              <input id="phone" type="tel" name="phone" placeholder="012-3456789" pattern="\+?[0-9\-]{9,15}" required>
                             </div>
                           </div>
                           <div class="col">
                             <div class="form_item m-0">
-                              <label for="input_email" class="input_title">Emel</label>
-                              <input id="input_email" type="email" name="email" placeholder="Emel">
+                              <label for="label_email" class="input_title">Emel</label>
+                              <input id="email" type="email" name="email" placeholder="Emel" required>
                             </div>
                           </div>
                           <div class="col">
                             <div class="form_item">
-                              <label for="input_message" class="input_title">Mesej Anda</label>
-                              <textarea id="input_message" name="message" placeholder="Taip Mesej Anda"></textarea>
+                              <label for="label_message" class="input_title">Mesej Anda</label>
+                              <textarea id="message" name="message" placeholder="Mesej Anda" required></textarea>
                             </div>
                             <button type="submit" class="btn btn_dark w-100 b-block">
                               <span>
@@ -304,6 +310,12 @@
                       </div>
                     </div>
                   </form>
+                  <div id="success-contact" class="success-contact-text">
+                    Thanks for contacting us! We will be in touch with you shortly.
+                  </div>
+                  <div id="error-contact" class="error-contact-text mt-2">
+                    An error occurred. Please refresh and try again.
+                  </div>
       
                   <!-- <div class="deco_item shape_img_1 wow fadeInUp" data-wow-delay=".2s">
                     <img src="assets/images/shape/shape_img_7.png" alt="Collab – Online Learning Platform">
@@ -468,7 +480,7 @@
                       Ada soalan atau perlukan maklumat lebih lanjut? Kami di sini untuk membantu. Klik butang di bawah untuk berhubung dengan kami melalui halaman hubungan kami!
                     </p>
                   </div>
-                  <form action="#">
+                  <!-- <form action="#"> -->
                     <div class="form_item m-0">
                       <!-- <input type="email" name="email" placeholder="Your Email"> -->
                       <button type="submit" class="btn btn_green">
@@ -478,7 +490,7 @@
                         </span>
                       </button>
                     </div>
-                  </form>
+                  <!-- </form> -->
                 </div>
               </div>
               <div class="deco_item shape_img_1 d-none d-lg-flex" data-parallax='{"x" : 0, "smoothness": 6}'>
@@ -741,6 +753,9 @@
 
     <!-- Custom - Jquery Include -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Contact Form -->
+    <script src="assets/js/contact-form.js"></script>
 
   </body>
 </html>

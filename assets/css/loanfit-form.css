@@ -1,0 +1,609 @@
+.wizard > .steps {
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    transform: translateX(50%);
+    z-index: 9; 
+}
+  
+.wizard > .steps .current-info, .wizard > .steps .number {
+    display: none;
+}
+  
+.wizard > .steps ul {
+    display: flex;
+    justify-content: center;
+}
+
+.wizard > .steps li a {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #e9e0cf;
+    margin-right: 78px;
+    position: relative;
+}
+  
+.wizard > .steps li a:before {
+    content: "";
+    width: 58px;
+    height: 2px;
+    background: #e9e0cf;
+    position: absolute;
+    right: 22px;
+    top: 5px;
+}
+  
+.wizard > .steps li a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    /* background: #6d7f52; */
+    background: #1068b2;
+    position: absolute;
+    left: -68px;
+    top: 5px;
+    transition: all 0.6s ease;
+}
+  
+.wizard > .steps li.first a {
+    /* background: #6d7f52; */
+    background: #1068b2;
+}
+  
+.wizard > .steps li.checked a {
+    /* background: #6d7f52;  */
+    background: #1068b2;
+}
+  
+.wizard > .steps li.checked a:after {
+    width: 58px; 
+}
+  
+.wizard > .steps li:last-child a {
+    margin-right: 0; 
+}
+  
+.wizard > .steps li:first-child a:before {
+    display: none; 
+}
+  
+.wizard > .steps li:first-child a:after {
+    display: none; 
+}
+
+.inner {
+    display: flex;
+    background: #fff;
+}
+
+.image-holder {
+    width: 38%;
+    height: 521px; 
+}
+  
+.image-holder-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-relative {
+  position: relative;
+}
+
+.form-centered-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 608px;
+  width: 486px;
+  background-color: #F9EC31;
+  color: #1068B2;
+  font-size: 38px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 55px;
+  padding: 0 90px;
+}
+
+.form-loanfit-img {
+  background-image: url('../images/loanfit/Loanfit-Form-1.png');
+  background-size: cover;
+  background-position: center;
+}
+  
+.form-content {
+    position: relative;
+    width: 60%;
+    padding-top: 0px;
+    padding-left: 51px;
+    padding-right: 51px; 
+}
+
+.form-header {
+    text-align: center; 
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 10px; 
+}
+  
+.form-row .form-holder {
+    width: 50%;
+    margin-right: 30px; 
+}
+  
+.form-row .form-holder:last-child {
+    margin-right: 0; 
+}
+  
+.form-row .form-holder.w-100 {
+    width: 100%;
+    margin-right: 0; 
+}
+  
+.form-row .select {
+    width: 50%;
+    margin-right: 30px; 
+}
+  
+.form-row .select .form-holder {
+    width: 100%;
+    margin-right: 0; 
+}
+
+.select {
+    position: relative; 
+}
+  
+.select .select-control {
+    height: 37px;
+    border-bottom: 2px solid #e6e6e6;
+    width: 100%;
+    color: #999;
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+}
+
+.select .dropdown li {
+  padding: 5px 10px; 
+}
+
+.select .dropdown li:hover {
+  background: #81acee;
+  color: #fff; 
+}
+
+.form-holder {
+  position: relative; 
+}
+
+.form-holder i {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 17px; 
+}
+
+ /* .form-control {
+  height: 37px;
+  border: none;
+  border-bottom: 2px solid #e6e6e6;
+  width: 100%;
+  color: #000000;
+} */
+
+
+/* .form-control:focus {
+  border-color: #e9e0cf; 
+}
+
+.form-control-dropdown {
+  padding: 0 10px;
+} */
+
+/* .form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+} */
+
+.form-control::-webkit-input-placeholder {
+  color: #999; 
+  /* font-size:14px; */
+}
+
+.form-control::-moz-placeholder {
+  color: #999; 
+}
+
+.form-control:-ms-input-placeholder {
+  color: #999; 
+}
+
+.form-control:-moz-placeholder {
+  color: #999; 
+}
+
+select[name="dependents"] {
+  color: #999;
+}
+
+select[name="dependents"]:not(:focus):valid {
+  color: black;
+}
+
+select[name="employmentStatus"] {
+  color: #999;
+}
+
+select[name="employmentStatus"]:not(:focus):valid {
+  color: black;
+}
+
+form#wizard {
+  margin-top: 0px;
+}
+
+form#wizard ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+  font-size: 12px;
+}
+
+form#wizard ul li {
+  width: 100%;
+}
+
+form#wizard p {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #969f89;
+  margin-bottom: 55px;
+}
+
+form#wizard label {
+  font-size: 10px;
+  color: #424143;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+/* form#wizard select.form-control option[value=""][disabled] {
+  display: none; 
+} */
+
+.actions {
+  position: absolute;
+  bottom: 60px;
+  left: 68%;
+  transform: translateX(-46%);
+  width: 45%;
+}
+
+.actions ul {
+  display: flex; 
+}
+
+.actions li a {
+  padding: 0;
+  border: none;
+  display: inline-flex;
+  height: 41px;
+  width: 100%;
+  align-items: center;
+  background: #1ab79a;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  font-family: sans-serif;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.actions ul li.disabled {
+  display: none;
+}
+
+/* .actions li a:before {
+  content: '\f301';
+  position: absolute;
+  right: 28px;
+  font-family: Material-Design-Iconic-Font; 
+} */
+
+.actions li.move-left a {
+  background: #5fdbc4;
+}
+
+.actions li.move-left a:hover {
+  background: cadetblue;
+  color: #4f4c51;
+  transform: translateX(-10px);
+}
+
+.actions li.move-right a:hover {
+  transform: translateX(10px);
+}
+
+.actions li.move-up a {
+  background: #09a88b;
+}
+
+.actions li.move-up a:hover {
+  transform: translateY(-10px);
+}
+
+.actions li a:hover {
+  background: #f9ec31;
+  color: #1068b2;
+  /* transform: translateX(10px); */
+  /* z-index: 1;
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+  -webkit-box-shadow: 0 8px 24px 0 rgba(16, 18, 19, 0.4);
+  box-shadow: 0 8px 24px 0 rgba(16, 18, 19, 0.4); */
+}
+
+.actions li a:hover {
+  background: #f9ec31;
+  color: #1068b2;
+  transform: translateX(10px);
+  /* z-index: 1;
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+  -webkit-box-shadow: 0 8px 24px 0 rgba(16, 18, 19, 0.4);
+  box-shadow: 0 8px 24px 0 rgba(16, 18, 19, 0.4); */
+}
+
+.actions li:first-child a {
+  /* width: 144px; */
+  /* padding-left: 48px;  */
+}
+
+/* .actions li:first-child a:before {
+  content: '\f2ff';
+  position: absolute;
+  left: 26px;
+  font-family: Material-Design-Iconic-Font; 
+} */
+
+.actions li:nth-child(2) a, .actions li:last-child a {
+  margin-left: 20px; 
+}
+
+/* .actions li:last-child a {
+  width: 124px;
+  background: #6d7f52;
+  color: #fff; 
+} */
+
+.actions li:last-child a:hover {
+  /* background: #849963;  */
+  background: #f9ec31;
+  color: #1068b2;
+}
+
+/* .actions li:last-child a:before {
+  content: '\f26b';
+  position: absolute;
+  right: 28px;
+  font-family: Material-Design-Iconic-Font; 
+} */
+
+.actions li[aria-disabled="true"] a {
+  opacity: 0;
+  transition: all 1s; 
+}
+
+/* .actions li[aria-disabled="false"] ~ li a {
+  background: #6d7f52;
+  color: #fff; 
+} */
+
+/* .actions li[aria-disabled="false"] ~ li a:hover {
+  background: #849963; 
+} */
+
+.loanfit-fields-error {
+  display: table-cell;
+  color: red !important;
+}
+
+form#wizard input#loanTermsCondition {
+  position: relative;
+  margin-right: 3px;
+  top: 4px;
+}
+
+.form-process {
+  display: none;
+  font-size: 13px;
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+}
+
+.form-success {
+  display: none;
+  font-size: 13px;
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+  color: #453e79;
+}
+
+.form-error {
+  display: none;
+  font-size: 13px;
+  color: red;
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+}
+
+.pb-custom-1 {
+  padding-bottom: 10vh !important;
+}
+
+.deco_dumbbell_loanfit {
+  position: absolute;
+  width: 350px;
+  left: -23px;
+  top: 310px;
+}
+
+.deco_moneybag_loanfit {
+  position: absolute;
+  right: -206px;
+  top: -150px;
+}
+
+.mtp-80 {
+  margin-top: 80px;
+}
+
+.bg_loanfit {
+  background-image: url('../images/loanfit/Paper-Tear-2.png');
+  background-size: cover;
+  background-position: center;
+  /* height: 100%; */
+}
+
+.deco_squiggle_loanfit {
+  position: absolute;
+  right: 0px;
+}
+
+.hp-260 {
+  height: 260px;
+}
+
+.mid-paper-tear {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.mid-paper-tear-1 {
+  background-image: url('../images/loanfit/Torn-Paper-19-1.png');
+  margin-right: 10px;
+}
+
+.mid-paper-tear-2 {
+  background-image: url('../images/loanfit/Torn-Paper-19-2.png');
+  margin-left: 10px;
+}
+
+.mid-paper-tear-text {
+  font-size: 20px;
+  padding: 4rem 6rem;
+}
+
+.loanfit-langkah {
+  background-color: #efefef;
+  /* box-shadow: rgba(31, 29, 13, 0.09) 2px 2px 30px, rgb(255, 211, 43) 5px 5px 0px 0px; */
+  box-shadow: rgba(31, 29, 13, 0.09) 2px 2px 30px, #1068b2 5px 5px 0px 0px;
+  z-index: 5;
+}
+
+.z-5 {
+  z-index: 5;
+}
+
+.text-bold {
+  font-weight: bolder;
+}
+
+.deco_item_loanfit {
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  margin-top: 120px;
+}
+
+@media (max-width: 767px) {
+
+  .form-centered-img {
+    width: 100%;
+    display: none; 
+  }
+
+  .form-row .form-holder, .form-row .select {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 18px; 
+  }
+
+  .form-content {
+    position: relative;
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .form-row {
+    display: block;
+  }
+
+  .wizard > .steps {
+    position: absolute;
+    top: 19%;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 9;
+  }
+
+  .actions {
+    position: absolute;
+    bottom: 13px;
+    left: 46%;
+    transform: translateX(-46%);
+    width: 75%;
+  }
+
+  .actions li:nth-child(2) a, .actions li:last-child a {
+    margin-left: 10px;
+  }
+
+  /* .actions li a {
+    font-size: 10px;
+  } */
+
+  form#wizard ul {
+    font-size: 10px;
+  }
+
+  .sec-relative-paper {
+    height: 130vh;
+  }
+
+  .mtp-80 {
+    margin-top: 123px;
+  }
+
+  .deco_dumbbell_loanfit {
+    display: none;
+  }
+
+  .mobile-mr-custom {
+    margin-right: 7%;
+  }
+
+}
