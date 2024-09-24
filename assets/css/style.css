@@ -244,6 +244,10 @@ hr {
   background-color: #F6F6F6;
 }
 
+.bg_grey {
+  background-color:#EDEDED;
+ }
+
 .bg_light_2 {
   background-color: #F8F8F8;
 }
@@ -1513,6 +1517,13 @@ color: #fff;
   padding-bottom: 20px;
 }
 
+/* custom icon */
+.small-dot {
+  font-size: 10px; /* Adjust the size of the dot */
+  color: white;   /* You can change the color if needed */
+  line-height: 1; /* Set line-height for alignment */
+  vertical-align: middle; /* Align dot with text */
+}
 
 /* custom page height */
 .full-height-section {
@@ -1529,6 +1540,21 @@ color: #fff;
 /* custom transparency */
 .bg_translucent{
   background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent black */
+}
+
+.about_banner{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 520px;
+  -webkit-box-align: bottom center;
+      -ms-flex-align: bottom center;
+          align-items: bottom center;
+  padding: 70px 115px;
+  background-size: contain; /* Updated to cover */
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-image: url('../images/About-Us-Paper-Tear.png');
 }
 
 /* .page_banner .about_wrapper {
@@ -1552,14 +1578,14 @@ color: #fff;
   display: -ms-flexbox;
   display: flex;
   min-height: 520px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: bottom center;
+      -ms-flex-align: bottom center;
+          align-items: bottom center;
   padding: 70px 115px;
-  background-size: cover; /* Updated to cover */
+  background-size: contain; /* Updated to cover */
   background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('../images/White-Paper-Tear.png');
+  background-position: bottom center;
+  /* background-image: url('../images/paper-tear-2.png'); */
 }
 
 /* Media queries for responsiveness */
@@ -1640,10 +1666,25 @@ background-position: bottom;
  
 }
 
+.text-yellow{
+  color: #F9EC31!important;
+ 
+}
+
+/* custom transparency */
+.transparent{
+  opacity: 0.4;
+}
+
 /* custom text style */
 .italic-skinny {
   font-style: italic;   /* Makes the text italic */
   font-weight: 400;     /* Sets the font weight to be light (skinny) */
+}
+
+.custom-text {
+  font-size: 20px;    /* Adjust the font size */
+  font-weight: 600;   /* Adjust the font weight */
 }
 
 /* custom shapes adjust */
@@ -1658,6 +1699,37 @@ background-position: bottom;
   bottom: 100px;
   right: 1vw;
   max-width: 148px;
+  z-index: 10;
+  max-width: 350px;
+  overflow: hidden;
+}
+
+/* custom shapes adjust */
+.about_banner .shape_img_4{
+  bottom: 300px;
+  left: -50px;
+  max-width: 148px;
+  z-index: 10;
+}
+
+.about_banner .shape_img_3{
+  top: -30px;
+  right: -200px;
+  max-width: 148px;
+  z-index: 10;
+}
+
+.about_banner .shape_img_2{
+  bottom: 120px;
+  left: -250px;
+  max-width: 300px;
+  z-index: 10;
+}
+
+.about_banner .shape_img_1{
+  bottom: 200px;
+  right: 1vw;
+  max-width: 200px;
   z-index: 10;
   max-width: 350px;
   overflow: hidden;
