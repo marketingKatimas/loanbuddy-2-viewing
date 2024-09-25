@@ -1695,6 +1695,17 @@ background-position: bottom;
   object-fit: cover; /* This ensures the video content fills the area, cropping as needed */
 }
 
+/* custom tiktok wrapper */
+.tiktok-wrapper {
+  background-color: #1068B2; /* Custom background color */
+  padding: 20px; /* Padding around the iframe to show the custom background */
+  display: inline-block; /* Optional to limit the wrapper size to the content */
+}
+
+.tiktok-embed {
+  background-color: transparent !important; /* Make the TikTok embed itself transparent */
+}
+
 /* custom transparency */
 .transparent{
   opacity: 0.4;
