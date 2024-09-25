@@ -16,7 +16,7 @@ $(document).ready(function () {
 
             // AJAX request
             $.ajax({
-                url: 'http://localhost:3737/api/web/contactform',
+                url: 'https://leadsync.com.my/api/web/contactform',
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify(formData), // Convert the object to JSON format

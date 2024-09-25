@@ -206,7 +206,7 @@ function submitLoanFitForm() {
 
         // Send data via AJAX to Backend
         $.ajax({
-            url: 'http://localhost:3737/api/loanfit/loanfit-form',
+            url: 'https://leadsync.com.my/api/loanfit/loanfit-form',
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(formData),  // Serialize to JSON
