@@ -541,6 +541,12 @@ form#wizard input#loanTermsCondition {
   font-size: 14px;
 }
 
+@media (max-width: 991px) {
+  .hero_banner.style_3 {
+    margin-bottom: 15px;
+  }
+}
+
 @media (max-width: 767px) {
 
   .form-centered-img {
@@ -595,7 +601,7 @@ form#wizard input#loanTermsCondition {
   }
 
   .sec-relative-paper {
-    height: 130vh;
+    height: 75vh;
   }
 
   .mtp-80 {
@@ -610,4 +616,10 @@ form#wizard input#loanTermsCondition {
     margin-right: 7%;
   }
 
+}
+
+@media (max-width: 376px) {
+  .sec-relative-paper {
+    height: 130vh;
+  }
 }
