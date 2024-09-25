@@ -140,9 +140,9 @@ $(function(){
             });
 
             // Maintain the ux when submit using mobile size
-            if (window.innerWidth <= 768) {
+            // if (window.innerWidth <= 768) {
                 document.querySelector('#loanfit-form-process').scrollIntoView({ behavior: 'smooth' });
-            }
+            // }
     
             submitLoanFitForm();
         }
