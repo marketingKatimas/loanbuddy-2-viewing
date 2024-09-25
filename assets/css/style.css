@@ -1700,10 +1700,27 @@ background-position: bottom;
   background-color: #1068B2; /* Custom background color */
   padding: 20px; /* Padding around the iframe to show the custom background */
   display: inline-block; /* Optional to limit the wrapper size to the content */
+  
 }
+
+/* article */
+
+.article-privasi p, .article-privasi li{
+  text-align: justify; /* Justify text in paragraphs */
+}
+
+.pl-40{
+	padding-left: 40px;
+}
+
+.kemaskini {
+  text-align: right!important;
+}
+
 
 .tiktok-embed {
   background-color: transparent !important; /* Make the TikTok embed itself transparent */
+  border-radius: 6px;
 }
 
 /* custom transparency */
