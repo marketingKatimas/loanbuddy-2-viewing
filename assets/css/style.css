@@ -5065,6 +5065,18 @@ Responsive For Mobile & Tablet Devices
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .hero_banner.style_2 {
+    height: 630px;
+  }
+  .testimonial_carousel {
+    margin: -3px;
+  }
+  .col-banner-arrow-btn {
+    display: none !important;
+  }
+  .col-banner-image {
+		display: none;
+	}
   .hero_banner .banner_image_2 {
     max-width: 500px;
     margin: 20px auto auto;
