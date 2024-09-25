@@ -3631,8 +3631,9 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
   display: block;
   font-size: 14px;
 }
+/* hover on small blogs on article */
 .blog_small:hover {
-  background-color: #F6F6F6;
+  background-color: #3f5964;
 }
 .blog_small:hover .item_image img {
   -webkit-transform: scale(1.08);
