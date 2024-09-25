@@ -5077,6 +5077,9 @@ Responsive For Mobile & Tablet Devices
   .col-banner-image {
 		display: none;
 	}
+  .col-banner-image-3 {
+		display: none;
+	}
   .hero_banner .banner_image_2 {
     max-width: 500px;
     margin: 20px auto auto;
