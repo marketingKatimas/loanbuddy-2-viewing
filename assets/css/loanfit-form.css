@@ -537,6 +537,10 @@ form#wizard input#loanTermsCondition {
   margin-top: 120px;
 }
 
+.loanfit-form-note {
+  font-size: 14px;
+}
+
 @media (max-width: 767px) {
 
   .form-centered-img {
