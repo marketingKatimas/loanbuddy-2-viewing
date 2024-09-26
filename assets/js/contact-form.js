@@ -42,3 +42,11 @@ $(document).ready(function () {
 
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const phoneInput = document.getElementById('phone');
+
+    phoneInput.addEventListener('input', function () {
+        // Remove non-numeric characters from the input
+        phoneInput.value = phoneInput.value.replace(/\D/g, '');
+    });
+});
