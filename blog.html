@@ -35,6 +35,9 @@
     <!-- Custom - CSS Include -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+     <!-- Blog - CSS Include -->
+     <link rel="stylesheet" type="text/css" href="assets/css/blog.css">
+
   </head>
 
 
@@ -188,10 +191,20 @@
         ================================================== -->
         <section class="blog_section section_space_lg">
           <div class="container">
+            <div class="row mb-4">
+              <div class="offset-lg-8 ">
+                <search role="search">
+                    <div class="ps-lg-4 ms-1 widget-search-blog">
+                      <input id="blogSearch" placeholder="Tajuk Blog..." class="search-blog-field" type="text" name="s" value="" onkeyup="resetBlogs()">
+                      <button class="search-blog-button" type="button" aria-label="Search" onclick="searchBlogs()">Cari</button>
+                    </div>
+                </search>
+              </div>
+            </div>
             <div class="row">
               <div class="col col-lg-8">
-                <div class="row">
-                  <div class="col col-lg-6">
+                <div class="row" id="blogList">
+                  <div class="col col-lg-6 blogPost" data-title="6 Aspek Utama Literasi Kewangan">
                     <div class="blog_item">
                       <ul class="item_category_list unordered_list">
                         <!-- <li><a href="#!">Photography</a></li> -->
@@ -237,7 +250,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col col-lg-6">
+                  <div class="col col-lg-6 blogPost" data-title="Tahap Pengetahuan Kewangan dalam kalangan Rakyat Malaysia">
                     <div class="blog_item">
                       <ul class="item_category_list unordered_list">
                         <!-- <li><a href="#!">Photography</a></li> -->
@@ -283,7 +296,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col col-lg-6">
+                  <div class="col col-lg-6 blogPost" data-title="Moratorium: Impak dan Pelaksanaannya">
                     <div class="blog_item">
                       <ul class="item_category_list unordered_list">
                         <!-- <li><a href="#!">Photography</a></li> -->
@@ -329,7 +342,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col col-lg-6">
+                  <div class="col col-lg-6 blogPost" data-title="Financial Independence, Retire Early (FIRE): Impian atau Kenyataan?">
                     <div class="blog_item">
                       <ul class="item_category_list unordered_list">
                         <!-- <li><a href="#!">Photography</a></li> -->
@@ -375,7 +388,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col col-lg-6">
+                  <div class="col col-lg-6 blogPost" data-title="5 Strategi untuk Membina Tabung Kecemasan">
                     <div class="blog_item">
                       <ul class="item_category_list unordered_list">
                         <!-- <li><a href="#!">Photography</a></li> -->
@@ -421,7 +434,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col col-lg-6">
+                  <div class="col col-lg-6 blogPost" data-title="4 Kerja Sampingan/Part-time untuk Income Extra!">
                     <div class="blog_item">
                       <ul class="item_category_list unordered_list">
                         <!-- <li><a href="#!">Photography</a></li> -->
@@ -467,7 +480,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col col-lg-6">
+                  <div class="col col-lg-6 blogPost" data-title="Waspada akan 6 Taktik Scam Ini!">
                     <div class="blog_item">
                       <ul class="item_category_list unordered_list">
                         <!-- <li><a href="#!">Photography</a></li> -->
@@ -513,7 +526,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col col-lg-6">
+                  <div class="col col-lg-6 blogPost" data-title="Pinjaman Peribadi: Kunci Kebebasan Kewangan atau Beban Jangka Panjang?">
                     <div class="blog_item">
                       <ul class="item_category_list unordered_list">
                         <!-- <li><a href="#!">Photography</a></li> -->
@@ -559,7 +572,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col col-lg-6">
+                  <div class="col col-lg-6 blogPost" data-title="Pinjaman Peribadi: Panduan Lengkap untuk Membuat Keputusan Bijak">
                     <div class="blog_item">
                       <ul class="item_category_list unordered_list">
                         <!-- <li><a href="#!">Photography</a></li> -->
@@ -605,7 +618,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col col-lg-6">
+                  <div class="col col-lg-6 blogPost" data-title="Pinjaman Koperasi: Solusi Kewangan untuk Kakitangan Kerajaan">
                     <div class="blog_item">
                       <ul class="item_category_list unordered_list">
                         <!-- <li><a href="#!">Photography</a></li> -->
@@ -1151,5 +1164,7 @@
     <!-- Custom - Jquery Include -->
     <script src="assets/js/main.js"></script>
 
+    <!-- Custom - Blogs Search -->
+    <script src="assets/js/blogs-search.js"></script>
   </body>
 </html>

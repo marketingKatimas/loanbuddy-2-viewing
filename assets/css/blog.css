@@ -1,0 +1,29 @@
+.search-blog-button {
+    background-color: #29281e;
+    color: white;
+    width: 80px;
+    line-height: 32px;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+.search-blog-button:hover {
+    color: #000;
+    background-color: #F6F6F6;
+    border: 1px solid #000;
+}
+
+.search-blog-field {
+    width: 220px;
+}
+
+@media (max-width: 376px) {
+    .widget-search-blog {
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-blog-field {
+        width: 240px;
+    }
+}
