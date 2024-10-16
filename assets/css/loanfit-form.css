@@ -184,9 +184,12 @@
 
 .form-holder i {
   position: absolute;
-  top: 10px;
+  /* top: 10px;
   right: 0;
-  font-size: 17px; 
+  font-size: 17px;  */
+  top: 38px;
+  right: 10px;
+  font-size: 20px;
 }
 
  /* .form-control {
@@ -214,9 +217,15 @@
   box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
 } */
 
+.form-control-dropdown {
+  font-size: 15px;
+  font-family: Tahoma;
+}
+
 .form-control::-webkit-input-placeholder {
   color: #999; 
-  /* font-size:14px; */
+  font-size: 15px;
+  font-family: Tahoma;
 }
 
 .form-control::-moz-placeholder {
@@ -229,6 +238,22 @@
 
 .form-control:-moz-placeholder {
   color: #999; 
+}
+
+select[name="maritalStatus"] {
+  color: #999;
+}
+
+select[name="maritalStatus"]:not(:focus):valid {
+  color: black;
+}
+
+select[name="address"] {
+  color: #999;
+}
+
+select[name="address"]:not(:focus):valid {
+  color: black;
 }
 
 select[name="dependents"] {
@@ -541,6 +566,10 @@ form#wizard input#loanTermsCondition {
   font-size: 14px;
 }
 
+.w-100-percent {
+  width: 100% !important;
+}
+
 @media (max-width: 991px) {
   .hero_banner.style_3 {
     margin-bottom: 15px;
@@ -574,7 +603,7 @@ form#wizard input#loanTermsCondition {
 
   .wizard > .steps {
     position: absolute;
-    top: 19%;
+    top: 140px;
     right: 50%;
     transform: translateX(50%);
     z-index: 9;

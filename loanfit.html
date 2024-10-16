@@ -39,6 +39,9 @@
     <!-- Loanfit Form - CSS Include -->
 	  <link rel="stylesheet" type="text/css" href="assets/css/loanfit-form.css">
 
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+	  <!-- <link rel="stylesheet" type="text/css" href="assets/css/material-design-iconic-font/css/material-design-iconic-font.css"> -->
+
     <!-- Google Recaptcha -->
     <script src="https://www.google.com/recaptcha/api.js?render=6LdmCn0nAAAAANC8dQDeC3bko97zlloPkuFcyP7_"></script>
 
@@ -531,9 +534,42 @@
                                 </div>
                               </div>
                               <div class="form-row">
-                                <div class="form-holder w-100">
-                                  <label for="icNoLabel">No Kad Pengenalan</label>
-                                  <input id="icNo" name="icNo" type="text" placeholder="000000-00-0000" class="form-control">
+                                <div class="form-holder">
+                                  <label for="ageLabel">Umur</label>
+                                  <input id="age" name="age" type="number" placeholder="Umur" class="form-control" min="1" step="1">
+                                </div>
+                                <div class="form-holder">
+                                  <label for="maritalStatusLabel">Status Perkahwinan</label>
+                                  <i class="zmdi zmdi-caret-down"></i>
+                                  <select id="maritalStatus" name="maritalStatus" class="form-control form-control-dropdown" required>
+                                    <option value="" disabled selected>Pilih Status</option>
+                                    <option value="Single">Bujang</option>
+                                    <option value="Married">Berkahwin</option>
+                                    <option value="Other">Lain-lain</option>
+                                  </select>
+                                </div>
+                                <div class="form-holder">
+                                  <label for="addressLabel">Alamat</label>
+                                  <i class="zmdi zmdi-caret-down"></i>
+                                  <select id="address" name="address" class="form-control form-control-dropdown" required>
+                                    <option value="" disabled selected>Pilih Negeri</option>
+                                    <option value="Johor">Johor</option>
+                                    <option value="Kedah">Kedah</option>
+                                    <option value="Kelantan">Kelantan</option>
+                                    <option value="Kuala Lumpur">Kuala Lumpur</option>
+                                    <option value="Labuan">Labuan</option>
+                                    <option value="Malacca">Malacca</option>
+                                    <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                    <option value="Pahang">Pahang</option>
+                                    <option value="Perak">Perak</option>
+                                    <option value="Perlis">Perlis</option>
+                                    <option value="Penang">Penang</option>
+                                    <option value="Putrajaya">Putrajaya</option>
+                                    <option value="Sabah">Sabah</option>
+                                    <option value="Sarawak">Sarawak</option>
+                                    <option value="Selangor">Selangor</option>
+                                    <option value="Terengganu">Terengganu</option>
+                                  </select>
                                 </div>
                               </div>
                               <div class="form-row">
@@ -548,21 +584,12 @@
                               </div>
                               <div class="form-row">
                                 <div class="form-holder">
-                                  <label for="ageLabel">Umur</label>
-                                  <input id="age" name="age" type="number" placeholder="Umur" class="form-control" min="1" step="1">
+                                  <label for="jobTitleLabel">Jawatan</label>
+                                  <input id="jobTitle" name="jobTitle" type="text" placeholder="Nama Jawatan" class="form-control">
                                 </div>
                                 <div class="form-holder">
-                                  <label for="dependentsLabel">Bil Tanggungan</label>
-                                  <i class="zmdi zmdi-caret-down"></i>
-                                  <select id="dependents" name="dependents" class="form-control form-control-dropdown" required>
-                                    <option value="" disabled selected>Jumlah</option>
-                                    <option value="0">Tiada</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5 atau lebih</option>
-                                  </select>
+                                  <label for="workDurationLabel">Tempoh Bekerja</label>
+                                  <input id="workDuration" name="workDuration" type="number" placeholder="Tempoh Bekerja (Bulan)" class="form-control" min="0" step="1">
                                 </div>
                                 <!-- <div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
                                   <div class="checkbox-tick">
@@ -605,8 +632,48 @@
           
                               <!-- <p>Please fill with additional info</p> -->
                               <p>Butiran Kewangan</p>
-          
+
                               <div class="form-row">
+                                <div class="form-holder w-100">
+                                  <label for="salaryLabel">Gaji Bulanan (RM)</label>
+                                  <input id="salary" name="salary" type="number" placeholder="1500" class="form-control" min="0" step="1">
+                                </div>
+                              </div>
+
+                              <div class="form-row">
+                                <div class="form-holder">
+                                  <label for="otLabel">OT Bulanan (RM)</label>
+                                  <input id="ot" name="ot" type="number" value=0 placeholder="500" class="form-control" min="0" step="1">
+                                </div>
+                                <div class="form-holder">
+                                  <label for="commissionAllowanceLabel">Komisen/Elaun Bulanan (RM)</label>
+                                  <input id="commissionAllowance" name="commissionAllowance" type="number" value=0 placeholder="500" class="form-control" min="0">
+                                </div>
+                              </div>
+
+                              <div class="form-row">
+                                <div class="form-holder">
+                                  <label for="businessIncomeLabel">Pendapatan Perniagaan Bulanan (RM)</label>
+                                  <input id="businessIncome" name="businessIncome" type="number" value=0 placeholder="1000" class="form-control" min="0" step="1">
+                                </div>
+                                <div class="form-holder">
+                                  <label for="rentalIncomeLabel">Pendapatan Sewa Bulanan (RM)</label>
+                                  <input id="rentalIncome" name="rentalIncome" type="number" value=0 placeholder="1000" class="form-control" min="0">
+                                </div>
+                              </div>
+
+                              <div class="form-row">
+                                <div class="form-holder">
+                                  <label for="investmentIncomeLabel">Pendapatan Pelaburan Bulanan (RM)</label>
+                                  <input id="investmentIncome" name="investmentIncome" type="number" value=0 placeholder="1000" class="form-control" min="0" step="1">
+                                </div>
+                                <div class="form-holder">
+                                  <label for="otherIncomeLabel">Pendapatan Lain (RM)</label>
+                                  <input id="otherIncome" name="otherIncome" type="number" value=0 placeholder="1000" class="form-control" min="0">
+                                </div>
+                              </div>
+          
+                              <!-- <div class="form-row">
                                 <div class="select">
                                   <div class="form-holder">
                                     <label for="employmentStatusLabel">Status Pekerjaan</label>
@@ -628,9 +695,6 @@
                               </div>
           
                               <div class="form-row">
-                                <!-- <div class="form-holder w-100">
-                                  <input type="text" placeholder="Address" class="form-control">
-                                </div> -->
                                 <div class="form-holder">
                                   <label for="workDurationLabel">Tempoh Bekerja</label>
                                   <input id="workDuration" name="workDuration" type="number" placeholder="Tempoh Bekerja (Bulan)" class="form-control" min="0" step="1">
@@ -650,13 +714,74 @@
                                   <label for="otherIncomeLabel">Pendapatan Lain (RM)</label>
                                   <input id="otherIncome" name="otherIncome" type="number" placeholder="100" class="form-control" min="0">
                                 </div>
-                              </div>
+                              </div> -->
           
                             </div>
                           </div>
                         </section>
-                
+
                         <!-- SECTION 3 -->
+                        <h2></h2>
+                        <section>
+                          <div class="inner">
+                            <div class="form-centered-img form-loanfit-img">
+                              <!-- find out how financially fit you are -->
+                            </div>
+                            <div class="form-content">
+                              <div class="form-header">
+                                <h3>Step 3</h3>
+                              </div>
+                              <p>Butiran Perbelanjaan</p>
+
+                              <div class="form-row">
+                                <div class="form-holder">
+                                  <label for="carLoanLabel">Loan Kereta Bulanan (RM)</label>
+                                  <input id="carLoan" name="carLoan" type="number" value=0 placeholder="1000" class="form-control" min="0" step="1">
+                                </div>
+                                <div class="form-holder">
+                                  <label for="houseLoanLabel">Loan Rumah Bulanan (RM)</label>
+                                  <input id="houseLoan" name="houseLoan" type="number" value=0 placeholder="1500" class="form-control" min="0">
+                                </div>
+                              </div>
+
+                              <div class="form-row">
+                                <div class="form-holder">
+                                  <label for="personalLoanLabel">Loan Peribadi Bulanan (RM)</label>
+                                  <input id="personalLoan" name="personalLoan" type="number" value=0 placeholder="500" class="form-control" min="0" step="1">
+                                </div>
+                                <div class="form-holder">
+                                  <label for="educationLoanLabel">Loan Pendidikan Bulanan (RM)</label>
+                                  <input id="educationLoan" name="educationLoan" type="number" value=0 placeholder="500" class="form-control" min="0">
+                                </div>
+                              </div>
+
+                              <div class="form-row">
+                                <div class="form-holder">
+                                  <label for="creditCardBillLabel">Bil Kad Kredit Bulanan (RM)</label>
+                                  <input id="creditCardBill" name="creditCardBill" type="number" value=0 placeholder="500" class="form-control" min="0" step="1">
+                                </div>
+                                <div class="form-holder">
+                                  <label for="nonBankInstallmentLabel">Bayaran Ansuran Bukan Bank Bulanan (RM)</label>
+                                  <input id="nonBankInstallment" name="nonBankInstallment" type="number" value=0 placeholder="500" class="form-control" min="0">
+                                </div>
+                              </div>
+
+                              <div class="form-row">
+                                <div class="form-holder">
+                                  <label for="rentalExpenseLabel">Bayaran Sewa Bulanan (RM)</label>
+                                  <input id="rentalExpense" name="rentalExpense" type="number" value=0 placeholder="500" class="form-control" min="0" step="1">
+                                </div>
+                                <div class="form-holder">
+                                  <!-- Empty field -->
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </div>
+                        </section>
+                
+                        <!-- SECTION 4 -->
                         <h2></h2>
                         <section>
                           <div class="inner">
@@ -669,7 +794,7 @@
                             <div class="form-content">
                               <div class="form-header">
                                 <!-- <h3>Registration</h3> -->
-                                <h3>Step 3</h3>
+                                <h3>Step 4</h3>
                               </div>
                               <!-- <p>Send an optional message</p> -->
                               <p>Butiran Loan</p>
@@ -678,7 +803,7 @@
                                   <textarea name="" id="" placeholder="Your messagere here!" class="form-control" style="height: 99px;"></textarea>
                                 </div>
                               </div> -->
-                              <div class="form-row">
+                              <!-- <div class="form-row">
                                 <div class="form-holder">
                                   <label for="loanTypeLabel">Jenis Loan</label>
                                   <input id="loanType" name="loanType" type="text" placeholder="contoh: Personal" class="form-control">
@@ -687,13 +812,25 @@
                                   <label for="loanPurposeLabel">Tujuan Loan</label>
                                   <input id="loanPurpose" name="loanPurpose" type="text" placeholder="Tujuan Loan" class="form-control">
                                 </div>
-                              </div>
-                              <div class="form-row">
+                              </div> -->
+                              <!-- <div class="form-row">
                                 <div class="form-holder">
                                   <label for="loanAmountLabel">Jumlah Loan diperlukan (RM)</label>
                                   <input id="loanAmount" name="loanAmount" type="number" placeholder="5000" class="form-control" min="0" step="1">
                                 </div>
                                 <div class="form-holder">
+                                  <label for="loanDurationLabel">Tempoh Loan diperlukan (Bulan)</label>
+                                  <input id="loanDuration" name="loanDuration" type="number" placeholder="Tempoh Loan (Bulan)" class="form-control" min="0" step="1">
+                                </div>
+                              </div> -->
+                              <div class="form-row">
+                                <div class="form-holder w-100">
+                                  <label for="loanAmountLabel">Jumlah Loan diperlukan (RM)</label>
+                                  <input id="loanAmount" name="loanAmount" type="number" placeholder="5000" class="form-control" min="0" step="1">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="form-holder w-100">
                                   <label for="loanDurationLabel">Tempoh Loan diperlukan (Bulan)</label>
                                   <input id="loanDuration" name="loanDuration" type="number" placeholder="Tempoh Loan (Bulan)" class="form-control" min="0" step="1">
                                 </div>
@@ -741,6 +878,7 @@
                             </div>
                           </div>
                         </section>
+
                       </form>
                     </div>
 

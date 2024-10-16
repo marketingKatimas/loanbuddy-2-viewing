@@ -19,28 +19,23 @@ $(function(){
             fullName: {
                 required: true
             },
-            icNo: {
-                required: true
-            },
             age: {
                 required: true
             },
-            phone: {
-                required: true,
-                number: true,
-                minlength: 9
+            maritalStatus: {
+                required: true
+            },
+            address: {
+                required: true
             },
             email: {
                 required: true,
                 email: true
             },
-            dependents: {
-                required: true
-            },
-
-            // Page 2
-            employmentStatus: {
-                required: true
+            phone: {
+                required: true,
+                number: true,
+                minlength: 9
             },
             jobTitle: {
                 required: true
@@ -49,26 +44,74 @@ $(function(){
                 required: true,
                 number: true
             },
-            monthlyExpenses: {
+            
+            // // Page 2
+            salary: {
                 required: true,
                 number: true
             },
-            monthlyIncome: {
-                required: true,
-                number: true
-            },
-            otherIncome: {
-                required: true,
-                number: true
-            },
+            // ot: {
+            //     required: true,
+            //     number: true
+            // },
+            // commissionAllowance: {
+            //     required: true,
+            //     number: true
+            // },
+            // businessIncome: {
+            //     required: true,
+            //     number: true
+            // },
+            // rentalIncome: {
+            //     required: true,
+            //     number: true
+            // },
+            // investmentIncome: {
+            //     required: true,
+            //     number: true
+            // },
+            // otherIncome: {
+            //     required: true,
+            //     number: true
+            // },
 
-            // Page 3
-            loanType: {
-                required: true
-            },
-            loanPurpose: {
-                required: true
-            },
+            // // Page 3
+            // carLoan: {
+            //     required: true,
+            //     number: true
+            // },
+            // houseLoan: {
+            //     required: true,
+            //     number: true
+            // },
+            // personalLoan: {
+            //     required: true,
+            //     number: true
+            // },
+            // educationLoan: {
+            //     required: true,
+            //     number: true
+            // },
+            // creditCardBill: {
+            //     required: true,
+            //     number: true
+            // },
+            // nonBankInstallment: {
+            //     required: true,
+            //     number: true
+            // },
+            // rentalExpense: {
+            //     required: true,
+            //     number: true
+            // },
+
+            // // Page 4
+            // loanType: {
+            //     required: true
+            // },
+            // loanPurpose: {
+            //     required: true
+            // },
             loanAmount: {
                 required: true,
                 number: true
@@ -185,19 +228,30 @@ function submitLoanFitForm() {
         // Collect form data and trim inputs
         var formData = {
             fullName: $('#fullName').val().trim(),
-            icNo: $('#icNo').val().trim(),
             age: $('#age').val().trim(),
-            phone: $('#phone').val().trim(),
+            maritalStatus: $('#maritalStatus').val().trim(),
+            address: $('#address').val().trim(),
             email: $('#email').val().trim(),
-            dependents: $('#dependents').val().trim(),
-            employmentStatus: $('#employmentStatus').val().trim(),
+            phone: $('#phone').val().trim(),
             jobTitle: $('#jobTitle').val().trim(),
             workDuration: $('#workDuration').val().trim(),
-            monthlyExpenses: $('#monthlyExpenses').val().trim(),
-            monthlyIncome: $('#monthlyIncome').val().trim(),
+
+            salary: $('#salary').val().trim(),
+            ot: $('#ot').val().trim(),
+            commissionAllowance: $('#commissionAllowance').val().trim(),
+            businessIncome: $('#businessIncome').val().trim(),
+            rentalIncome: $('#rentalIncome').val().trim(),
+            investmentIncome: $('#investmentIncome').val().trim(),
             otherIncome: $('#otherIncome').val().trim(),
-            loanType: $('#loanType').val().trim(),
-            loanPurpose: $('#loanPurpose').val().trim(),
+
+            carLoan: $('#carLoan').val().trim(),
+            houseLoan: $('#houseLoan').val().trim(),
+            personalLoan: $('#personalLoan').val().trim(),
+            educationLoan: $('#educationLoan').val().trim(),
+            creditCardBill: $('#creditCardBill').val().trim(),
+            nonBankInstallment: $('#nonBankInstallment').val().trim(),
+            rentalExpense: $('#rentalExpense').val().trim(),
+
             loanAmount: $('#loanAmount').val().trim(),
             loanDuration: $('#loanDuration').val().trim(),
             // loanTermsCondition: $('#loanTermsCondition').is(':checked')
@@ -248,33 +302,33 @@ function submitLoanFitForm() {
     });
 };
 
-$(document).ready(function() {
-    // Get the select dropdown and input field
-    const $employmentStatus = $('#employmentStatus');
-    const $jobTitle = $('#jobTitle');
-    // Listen for changes in the dropdown
-    $employmentStatus.on('change', function() {
-        if ($employmentStatus.val() === "Unemployed" || $employmentStatus.val() === "Student" || $employmentStatus.val() === "Retired" ) {
-            var jobTitleValue = "";
+// $(document).ready(function() {
+//     // Get the select dropdown and input field
+//     const $employmentStatus = $('#employmentStatus');
+//     const $jobTitle = $('#jobTitle');
+//     // Listen for changes in the dropdown
+//     $employmentStatus.on('change', function() {
+//         if ($employmentStatus.val() === "Unemployed" || $employmentStatus.val() === "Student" || $employmentStatus.val() === "Retired" ) {
+//             var jobTitleValue = "";
 
-            switch ($employmentStatus.val()) {
-                case "Unemployed":
-                    jobTitleValue = "Tidak Bekerja";
-                    break;
-                case "Student":
-                    jobTitleValue = "Pelajar";
-                    break;
-                case "Retired":
-                    jobTitleValue = "Sudah Bersara";
-                    break;
-                default:
-                    jobTitleValue = "";
-                    break;
-            }
+//             switch ($employmentStatus.val()) {
+//                 case "Unemployed":
+//                     jobTitleValue = "Tidak Bekerja";
+//                     break;
+//                 case "Student":
+//                     jobTitleValue = "Pelajar";
+//                     break;
+//                 case "Retired":
+//                     jobTitleValue = "Sudah Bersara";
+//                     break;
+//                 default:
+//                     jobTitleValue = "";
+//                     break;
+//             }
 
-            $jobTitle.val(jobTitleValue);
-        } else {
-            $jobTitle.val("");
-        }
-    });
-});
+//             $jobTitle.val(jobTitleValue);
+//         } else {
+//             $jobTitle.val("");
+//         }
+//     });
+// });
