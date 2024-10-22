@@ -1,0 +1,14 @@
+.row_commitment {
+    padding: 0 151px;
+    text-align: center;
+    justify-content: space-evenly;
+    column-gap: 10px;
+}
+
+.col_commitment {
+    display: flex;
+    align-items: flex-end;
+    background: #1ab79a;
+    height: 200px;
+    margin-top: auto;
+}
