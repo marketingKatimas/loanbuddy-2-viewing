@@ -99,7 +99,7 @@
   align-items: center;
   height: 608px;
   width: 486px;
-  background-color: #F9EC31;
+  /* background-color: #F9EC31; */
   color: #1068B2;
   font-size: 38px;
   text-align: center;
@@ -109,7 +109,8 @@
 }
 
 .form-loanfit-img {
-  background-image: url('../images/loanfit/Loanfit-Form-1.png');
+  /* background-image: url('../images/loanfit/Loanfit-Form-1.png'); */
+  background-image: url('../images/loanfit/Mask_group.png');
   background-size: cover;
   background-position: center;
 }
@@ -292,7 +293,7 @@ form#wizard p {
   font-weight: 500;
   text-align: center;
   color: #969f89;
-  margin-bottom: 55px;
+  margin-bottom: 73px;
 }
 
 form#wizard label {
@@ -308,7 +309,7 @@ form#wizard label {
 
 .actions {
   position: absolute;
-  bottom: 60px;
+  bottom: 33px;
   left: 68%;
   transform: translateX(-46%);
   width: 45%;
@@ -325,7 +326,7 @@ form#wizard label {
   height: 41px;
   width: 100%;
   align-items: center;
-  background: #1ab79a;
+  background: #1068b2;
   color: #fff;
   cursor: pointer;
   position: relative;
@@ -334,7 +335,8 @@ form#wizard label {
   border-radius: 50px;
   font-weight: 700;
   font-size: 16px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  letter-spacing: 3px;
   transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
@@ -364,7 +366,7 @@ form#wizard label {
 }
 
 .actions li.move-up a {
-  background: #09a88b;
+  /* background: #09a88b; */
 }
 
 .actions li.move-up a:hover {
@@ -372,19 +374,8 @@ form#wizard label {
 }
 
 .actions li a:hover {
-  background: #f9ec31;
-  color: #1068b2;
-  /* transform: translateX(10px); */
-  /* z-index: 1;
-  -webkit-transform: translateY(-4px);
-  transform: translateY(-4px);
-  -webkit-box-shadow: 0 8px 24px 0 rgba(16, 18, 19, 0.4);
-  box-shadow: 0 8px 24px 0 rgba(16, 18, 19, 0.4); */
-}
-
-.actions li a:hover {
-  background: #f9ec31;
-  color: #1068b2;
+  /* background: #1ab79a; */
+  /* color: #1068b2; */
   transform: translateX(10px);
   /* z-index: 1;
   -webkit-transform: translateY(-4px);
@@ -417,8 +408,9 @@ form#wizard label {
 
 .actions li:last-child a:hover {
   /* background: #849963;  */
-  background: #f9ec31;
-  color: #1068b2;
+  /* background: #f9ec31; */
+  background: #1068b2;
+  /* color: #1068b2; */
 }
 
 /* .actions li:last-child a:before {
@@ -562,12 +554,199 @@ form#wizard input#loanTermsCondition {
   margin-top: 120px;
 }
 
+.deco_item_loanfit_1 {
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  margin-top: -420px;
+}
+
+.deco_item_loanfit_2 {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  margin-top: -455px;
+}
+
 .loanfit-form-note {
   font-size: 14px;
 }
 
 .w-100-percent {
   width: 100% !important;
+}
+
+.loanfit-banner {
+  height: 100vh;
+  background-image: url('../images/loanfit/Group_122_v_chatbox.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.site_header_3 {
+  padding: 0;
+  line-height: 87px;
+}
+
+.site_header_3.sticky {
+  padding: 0;
+}
+
+.loanfit-banner-text {
+  height: 100vh;
+  font-size: 21px;
+}
+
+.service_item_loanfit {
+  border-radius: 1px;
+  position: relative;
+  padding: 30px 40px;
+  transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  border: 2px solid #F6F6F6;
+}
+
+.bg_langkah {
+  /* height: 148vh; */
+  height: 1250px;
+  background-image: url('../images/loanfit/Group_123.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.course_card_loanfit {
+  overflow: hidden;
+  position: relative;
+  transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  padding: 0px 28px;
+  border-radius: 1px;
+  background-color: #ffffff;
+  border: 2px solid #D2D2D2;
+}
+
+.container-loanfit-form {
+  margin-top: -325px;
+  position: relative;
+  z-index: 3;
+}
+
+.loanfit_faq_section {
+  padding-top: 280px;
+  margin-top: -270px;
+}
+
+.heading_text_faq {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.bg_blue_loanfit {
+  background-color: #1068b2;
+}
+
+.cta_loanfit {
+  margin: 0px 175px;
+  height: 280px;
+  align-items: center;
+}
+
+.site_footer {
+  position: relative;
+  z-index: 3;
+}
+
+.btn_cta_loanfit {
+  z-index: 3;
+  color: #1068b2;
+  border-color: #1068b2;
+  background-color: white;
+  border-radius: 45px;
+  letter-spacing: 3px;
+  line-height: 1;
+  padding: 0 40px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  border: 2px solid transparent;
+  display: inline-block;
+  font-weight: 400;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: rgba(31, 29, 13, 0.09) 2px 2px 30px, #f9ec31 5px 5px 0px 0px;
+}
+
+.btn_cta_loanfit:hover {
+  border-color: #1AB79A;
+  box-shadow: 0px 20px 30px 0px rgba(31, 29, 13, 0.1);
+}
+
+.btn_cta_loanfit span small {
+  display: block;
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 14px;
+  transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.main_menu_list > li > a {
+  color: #1068b2;
+}
+
+.banner-text-mobile {
+  display: none;
+}
+
+.banner-image-mobile {
+  display: none;
+}
+
+.social_links a:after {
+  background-color: #ffffff;
+}
+
+/* .social_links a:before {
+  border: 2px solid #ffffff;
+} */
+
+.page_list .item_icon {
+  color: inherit;
+}
+
+.site_footer .blog_small .item_title:hover {
+  color: #F7FF62;
+}
+
+/* .page_list .item_icon:hover {
+  color: #F7FF62;
+} */
+
+.hero_banner .banner_big_title_loanfit {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 68px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.loanfit-logo {
+  /* width: 300px; */
+  width: 250px;
+  margin-left: 50px;
+}
+
+.text-22px {
+  font-size: 22px;
+  padding-right: 55px;
+}
+
+.loanfit-mid {
+  margin-bottom: 3rem;
+}
+
+.text-yellow-1 {
+  color: #f1e530;
 }
 
 @media (max-width: 991px) {
@@ -577,7 +756,6 @@ form#wizard input#loanTermsCondition {
 }
 
 @media (max-width: 767px) {
-
   .form-centered-img {
     width: 100%;
     display: none; 
@@ -611,7 +789,7 @@ form#wizard input#loanTermsCondition {
 
   .actions {
     position: absolute;
-    bottom: 13px;
+    bottom: 10px;
     left: 46%;
     transform: translateX(-46%);
     width: 75%;
@@ -645,10 +823,85 @@ form#wizard input#loanTermsCondition {
     margin-right: 7%;
   }
 
+  .container-loanfit-form {
+    margin-top: 185px;
+  }
+
+  .course_card_loanfit .content {
+    padding-bottom: 20px;
+  }
+
+  .cta_loanfit {
+    margin: 0px 15px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 376px) {
   .sec-relative-paper {
     height: 130vh;
+  }
+
+  .deco_item_loanfit_2 {
+    margin-top: -183px;
+  }
+
+  .cta_loanfit {
+    height: 190px;
+    padding: 15px 0px;
+  }
+
+  .loanfit-banner {
+    background-image: none;
+    height: auto;
+  }
+
+  .loanfit-banner-text {
+    height: auto;
+  }
+  
+  .banner-text-mobile {
+    display: block;
+    padding: 20px 66px;
+  }
+
+  .banner-text-laptop {
+    display: none;
+  }
+
+  .banner-image-mobile {
+    display: block;
+  }
+
+  .mtp-80 {
+    margin-top: 80px;
+  }
+
+  .text-22px {
+    font-size: 16px;
+    padding-right: 0;
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+
+  .loanfit-mid {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .loanfit-logo {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .banner_description_mobile {
+    margin-bottom: 5px !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero_banner .banner_title_loanfit {
+      font-size: 36px;
+      font-weight: 700;
   }
 }
