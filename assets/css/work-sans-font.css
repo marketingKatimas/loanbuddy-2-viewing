@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-Light.woff2') format('woff2'),
+        url('../fonts/workSans/WorkSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-Regular.woff2') format('woff2'),
+        url('../fonts/workSans/WorkSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-Medium.woff2') format('woff2'),
+        url('../fonts/workSans/WorkSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/workSans/WorkSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-Bold.woff2') format('woff2'),
+        url('../fonts/workSans/WorkSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/workSans/WorkSans-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-Black.woff2') format('woff2'),
+        url('../fonts/workSans/WorkSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-Italic.woff2') format('woff2'),
+        url('../fonts/workSans/WorkSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
