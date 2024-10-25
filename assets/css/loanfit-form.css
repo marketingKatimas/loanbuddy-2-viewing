@@ -690,9 +690,9 @@ form#wizard input#loanTermsCondition {
   transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.main_menu_list > li > a {
+/* .main_menu_list > li > a {
   color: #1068b2;
-}
+} */
 
 .banner-text-mobile {
   display: none;
@@ -755,6 +755,28 @@ form#wizard input#loanTermsCondition {
 
 .text-yellow-1 {
   color: #f1e530;
+}
+
+.li-terma-syarat {
+  margin-bottom: 5px;
+}
+
+.p-terma-syarat {
+  margin-left: 25px;
+}
+
+/* .li-dasar-privasi {
+  margin-bottom: 5px;
+} */
+
+.p-dasar-privasi {
+  margin-left: 1px;
+}
+
+@media (min-width: 1200px) {
+  .modal-title-custom-1 {
+    margin-left: 40%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -904,6 +926,10 @@ form#wizard input#loanTermsCondition {
 
   .banner_description_mobile {
     margin-bottom: 5px !important;
+  }
+
+  .p-terma-syarat {
+    margin-left: 2px;
   }
 }
 
