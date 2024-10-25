@@ -1100,9 +1100,9 @@ blockquote p {
 }
 
 .intro_video_section .shape_img_1 {
-  top: -100px;
-  right: -147px;
-  max-width: 120px;
+  top: 0px;
+  right: 0;
+  max-width: 1200px;
 }
 .intro_video_section .shape_img_2 {
   top: 30%;
@@ -1555,7 +1555,7 @@ color: #fff;
   margin-top: -1320px;
 }
 
-.deco_item_home_cta_1 img {
+.deco_item_home_cta_1, .deco_item_home_cta_3 img {
   opacity: 0.2;
 }
 
@@ -1675,14 +1675,14 @@ color: #fff;
   display: -ms-flexbox;
   display: flex;
   min-height: 520px;
-  -webkit-box-align: bottom center;
-      -ms-flex-align: bottom center;
-          align-items: bottom center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 70px 115px;
-  background-size: contain; /* Updated to cover */
+  background-size: cover; /* Updated to cover */
   background-repeat: no-repeat;
-  background-position: bottom center;
-  background-image: url('../images/About-Us-Paper-Tear.png');
+  background-position: center;
+  
 }
 
 /* .page_banner .about_wrapper {
