@@ -209,4 +209,11 @@
   // Common Carousels - End
   // --------------------------------------------------
 
+  // Data Image - Start
+  // --------------------------------------------------
+  $("[data-background").each(function () {
+		$(this).css("background-image", "url( " + $(this).attr("data-background") + "  )");
+	});
+  // Data Image - End
+  // --------------------------------------------------
 })(jQuery);

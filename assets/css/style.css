@@ -232,6 +232,9 @@ hr {
 ================================================== */
 /* 2.1 - Template Colors - Start
 ================================================== */
+.bg_green {
+  background-color:#1AB79A;
+ }
 
 .bg_blue {
  background-color:#1068B2;
@@ -468,6 +471,11 @@ hr {
   color: #1F1D0D;
 }
 
+.btn_blue {
+  color: #ffffff;
+  border-color: #1068B2;
+  background-color: #1068B2;
+}
 
 .btn_green {
   color: #ffffff;
@@ -1092,9 +1100,9 @@ blockquote p {
 }
 
 .intro_video_section .shape_img_1 {
-  top: 100px;
+  top: -100px;
   right: -147px;
-  max-width: 102px;
+  max-width: 120px;
 }
 .intro_video_section .shape_img_2 {
   top: 30%;
@@ -1259,7 +1267,7 @@ blockquote p {
 /* 2.12 - Form - end
 ================================================== */
 
-/* recently added and newly added start */
+/* custom recently added and newly added start */
 
 
 /* Calculator */
@@ -1512,6 +1520,122 @@ color: #fff;
 
 /* End For Loan Calculator */
 
+/* custom loancompare*/
+.coming-soon-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-position: center;
+  background-size: cover; /* Ensures the image covers the whole section */
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color for visibility */
+}
+
+/* custom loancompare end*/
+
+/* custom CTA */
+.cta_container {
+  position: relative; /* Contain the absolutely positioned decorative item */
+  overflow: hidden; /* Ensure nothing overflows the section */
+}
+.cta_home {
+  margin: 0px 175px;
+  height: 280px;
+  align-items: center;
+  
+}
+
+.deco_item_home_cta_1 {
+  position: absolute;
+  z-index: 1;
+  right: -100px;
+  margin-top: -1320px;
+}
+
+.deco_item_home_cta_1 img {
+  opacity: 0.2;
+}
+
+.deco_item_home_cta_2 {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  margin-top: -455px;
+}
+
+.deco_item_home_cta_3 {
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  margin-top: -750px;
+}
+
+@media (max-width: 376px) {
+
+  .deco_item_home_cta_2 {
+    margin-top: -183px;
+  }
+
+  .cta_home {
+    height: 190px;
+    padding: 15px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .cta_home {
+    margin: 0px 15px;
+    text-align: center;
+  }
+}
+
+.btn_cta_home {
+  z-index: 3;
+  color: #1068b2;
+  border-color: #1068b2;
+  background-color: white;
+  border-radius: 45px;
+  letter-spacing: 3px;
+  line-height: 1;
+  padding: 0 40px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  border: 2px solid transparent;
+  display: inline-block;
+  font-weight: 400;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: rgba(31, 29, 13, 0.09) 2px 2px 30px, #f9ec31 5px 5px 0px 0px;
+}
+
+.btn_cta_home:hover {
+  border-color: #1AB79A;
+  box-shadow: 0px 20px 30px 0px rgba(31, 29, 13, 0.1);
+}
+
+.btn_cta_home span small {
+  display: block;
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 14px;
+  transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* custom CTA ends */
+
+/* custom carousel */
+.carousel_item_1, .carousel_item_2, .carousel_item_3, .hero_banner.style_2 {
+  min-height: 85vh; /* Adjust based on your desired height */
+}
+
+
 /* custom padding */
 .pb-20{
   padding-bottom: 20px;
@@ -1540,6 +1664,10 @@ color: #fff;
 /* custom transparency */
 .bg_translucent{
   background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent black */
+}
+
+.bg_transparent img{
+  opacity: 0.5;
 }
 
 .about_banner{
@@ -1708,9 +1836,17 @@ background-position: bottom;
 .article-privasi p, .article-privasi li{
   text-align: justify; /* Justify text in paragraphs */
 }
+.heading_text.font-increase{
+  font-size: 7vh;
+}
+
 
 .pl-40{
 	padding-left: 40px;
+}
+
+.pl-10{
+	padding-left: 10px;
 }
 
 .kemaskini {
@@ -1759,6 +1895,14 @@ background-position: bottom;
 
 
 /* custom shapes adjust */
+
+.intro_video_section .shape_img_5{
+  bottom: 120px;
+  left: -250px;
+  max-width: 300px;
+  
+}
+
 .about_banner .shape_img_4{
   bottom: 300px;
   left: -50px;
@@ -1890,13 +2034,15 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
 /* custom bg adjust cat image on imtro-video-section */
 .intro_video_section {
   position: relative; /* Make the section relative to contain absolutely positioned elements */
-  background-image: url('../images/cool_cat.png'); /* Replace with the path to your cat image */
+  /*background-image: url('../images/cool_cat.png');  Replace with the path to your cat image */
   background-position: bottom center; /* Position the image at the bottom center */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: contain; /* Ensure the image scales to fit its container */
   overflow: hidden; /* Prevent any overflow of the image */
   padding-bottom: 100px; /* Add some padding to the bottom to make space for the cat image */
 }
+
+
 
 
 /* Recently added - newly added end */
@@ -2148,7 +2294,7 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #1F1D0D;
+  background-color: #1068B2;
 }
 .iconbox_item .item_title {
   font-size: 22px;
@@ -2499,6 +2645,9 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
 ================================================== */
 /* 3.1 - Banner - Start
 ================================================== */
+
+
+
 .hero_banner .banner_small_title {
   font-size: 13px;
   font-weight: 700;
@@ -2610,17 +2759,17 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
 }
 /* banner index-2 adjust color */
 .hero_banner.style_2 {
+  min-width: 100vw;
   overflow: hidden;
   padding: 152px 0 160px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #F9EC31;
-  background-position: center center;
-  background-image: url('../images/paper.png'); /* Replace with the path to your cat image */
-  background-position: bottom center; /* Position the image at the bottom center */
+  /* background-color: #137FAA; */
+  background-position: center;
+  /* background-image: url('../images/paper.png'); */
+  background-position: center; /* Position the image at the bottom center */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: contain; /* Ensure the image scales to fit its container */
-  overflow: hidden; /* Prevent any overflow of the image */
   padding-bottom: 100px; /* Add some padding to the bottom to make space for the cat image */
 }
 .hero_banner.style_2 .banner_big_title {
@@ -2669,8 +2818,8 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
   right: -4%;
 }
 .banner_image_2 .image_wrap_3 {
-  top: 28%;
-  right: -22%;
+  bottom: 9vh;
+  right: -2%;
 }
 .banner_image_2 .image_wrap_4 {
   top: 38%;
@@ -2839,8 +2988,8 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
 
   -webkit-transform: translate(-2px, -2px);
           transform: translate(-2px, -2px);
-  -webkit-box-shadow: 10px 10px 0 0 #1F1D0D;
-          box-shadow: 10px 10px 0 0 #1F1D0D;
+  -webkit-box-shadow: 10px 10px 0 0 #1AB79A;
+          box-shadow: 10px 10px 0 0 #1AB79A;
 }
 .course_card .item_image {
   margin-bottom: 23px;
@@ -4143,7 +4292,9 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
 ================================================== */
 .site_footer {
   color: #C8C8C8;
-  background-color: #1F1D0D;
+  /* background-color: #1F1D0D; */
+  background-color: #424143;
+  
 }
 .site_footer .site_logo {
   margin-bottom: 35px;
@@ -4660,9 +4811,9 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #FFD32B;
-  -webkit-box-shadow: 2px 2px 30px rgba(31, 29, 13, 0.0894963), 4px 4px 0 0 #1F1D0D;
-          box-shadow: 2px 2px 30px rgba(31, 29, 13, 0.0894963), 4px 4px 0 0 #1F1D0D;
+  background-color: #ffffff;
+  -webkit-box-shadow: 2px 2px 0px #1068B2, 4px 4px 0 0 #1068B2;
+          box-shadow: 2px 2px 0px #1068B2, 4px 4px 0 0 #1068B2;
 }
 .contact_info_iconbox .item_title {
   font-size: 18px;
