@@ -577,8 +577,8 @@ form#wizard input#loanTermsCondition {
 }
 
 .loanfit-banner {
-  height: 100vh;
-  background-image: url('../images/loanfit/Group_122_v_chatbox.png');
+  height: 91vh;
+  background-image: url('../images/loanfit/LoanFit-KV.png');
   background-size: cover;
   background-position: center;
 }
@@ -773,6 +773,51 @@ form#wizard input#loanTermsCondition {
   margin-left: 1px;
 }
 
+.loanfit-floating-1 {
+  position: absolute;
+  top: -315px;
+  right: -15%;
+}
+
+.loanfit-floating-2 {
+  position: absolute;
+  right: 0;
+}
+
+.loanfit-floating-3 {
+  position: absolute;
+  background: #ffffff;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+@media (min-width: 1600px) {
+  .loanfit-floating-1 {
+    position: absolute;
+    top: -404px;
+    right: -36%;
+  }
+  
+  .loanfit-floating-2 {
+    position: absolute;
+    top: -65px;
+    right: -38%;
+  }
+  
+  .loanfit-floating-3 {
+    position: absolute;
+    top: 127px;
+    right: -25%;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 18px;
+  }
+}
+
 @media (min-width: 1200px) {
   .modal-title-custom-1 {
     margin-left: 40%;
@@ -782,6 +827,10 @@ form#wizard input#loanTermsCondition {
 @media (max-width: 991px) {
   .hero_banner.style_3 {
     margin-bottom: 15px;
+  }
+  
+  .banner-floating-image-laptop {
+    display: none;
   }
 }
 
