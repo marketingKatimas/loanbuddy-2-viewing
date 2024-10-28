@@ -1551,8 +1551,10 @@ color: #fff;
 .deco_item_home_cta_1 {
   position: absolute;
   z-index: 1;
-  right: -100px;
-  margin-top: -1320px;
+  /* right: -100px;
+  margin-top: -1320px; */
+  right: -180px;
+  margin-top: -882px;
 }
 
 .deco_item_home_cta_1, .deco_item_home_cta_3 img {
@@ -1583,6 +1585,15 @@ color: #fff;
     height: 190px;
     padding: 15px 0px;
   }
+
+  .perkhidmatan_card {
+    margin: 5px;
+  }
+
+  .col-perkhidmatan-1 {
+    margin-bottom: 80px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -2969,6 +2980,38 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
 }
 .course_small_layout:hover .item_title {
   text-decoration: underline;
+}
+
+.section_space_lg_top {
+  padding-top: 10px;
+}
+
+.cta_container_full_width {
+  max-width: none;
+}
+
+.perkhidmatan_card {
+  padding: 28px 28px 32px;
+  height: 108%;
+}
+
+.perkhidmatan_image {
+  border-radius: 4px;
+  box-shadow: 2px 2px 30px rgba(31, 29, 13, 0.0894963), 5px 5px 0 0 #1ab79a;
+}
+
+.btn_cta_home_perkidmatan {
+  border: 2px solid #1068b2;
+  letter-spacing: 0;
+}
+
+.item_title_perkhidmatan {
+  color: #1068b2;
+}
+
+.z-index-3 {
+  position: relative;
+  z-index: 3;
 }
 
 .course_card {
