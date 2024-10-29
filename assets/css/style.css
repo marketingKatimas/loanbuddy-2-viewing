@@ -1611,6 +1611,10 @@ color: #fff;
     margin-bottom: 80px;
   }
 
+  .carousel_item_home {
+    background-position: 70% -47px !important;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1662,6 +1666,12 @@ color: #fff;
 .carousel_item_1, .carousel_item_2, .carousel_item_3, .hero_banner.style_2 {
   min-height: 85vh; /* Adjust based on your desired height */
   background-image: contain;
+}
+
+.carousel_item_home {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 
