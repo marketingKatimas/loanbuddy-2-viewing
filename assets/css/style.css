@@ -1744,7 +1744,7 @@ color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 520px;
+  min-height: 600px;
   -webkit-box-align: bottom center;
       -ms-flex-align: bottom center;
           align-items: bottom center;
@@ -2887,13 +2887,14 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
   /* background-image: url("../images/banner/icons_group.svg"); */
 }
 .banner_image_2 .image_wrap_2 {
-  top: 75px;
+  top: 30px;
   right: -4%;
 }
 .banner_image_2 .image_wrap_3 {
   bottom: 18vh;
   right: 3%;
 }
+
 
 .banner_image_2 .image_wrap_7 {
   bottom: 20vh;
@@ -2907,9 +2908,15 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
   left: 0%;
 }
 
+.banner_image_2 .image_wrap_9 {
+  bottom: 18vh;
+  right: -20%;
+}
+
 .banner_image_2 .image_wrap_4 {
-  top: 38%;
-  left: -2%;
+  top: 20vh;
+  left: 15vw;
+  /* width: 200px; */
 }
 /* for loancompare page */
 .banner_image_2 .image_wrap_5 {
