@@ -4934,7 +4934,7 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
   -webkit-box-flex: 0;
       -ms-flex: 0 0 62px;
           flex: 0 0 62px;
-  color: #1F1D0D;
+  color: #1068B2;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4944,6 +4944,25 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
   background-color: #ffffff;
   -webkit-box-shadow: 2px 2px 0px #1068B2, 4px 4px 0 0 #1068B2;
           box-shadow: 2px 2px 0px #1068B2, 4px 4px 0 0 #1068B2;
+}
+
+.contact_info_iconbox .item_icon:hover {
+  width: 62px;
+  height: 62px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 62px;
+          flex: 0 0 62px;
+  color: #1068B2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fcff54;
+  -webkit-box-shadow: 2px 2px 0px #1068B2, 4px 4px 0 0 #1068B2;
+    
+  box-shadow: 2px 2px 0px #1068B2, 4px 4px 0 0 #1068B2;
 }
 .contact_info_iconbox .item_title {
   font-size: 18px;
