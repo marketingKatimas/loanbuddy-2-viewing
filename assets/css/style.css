@@ -2237,8 +2237,10 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
   border-radius: 100%;
   -webkit-transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
   transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  
 }
 .social_links a:before {
+  
   border: 2px solid #F9EC31;
 }
 .social_links a:after {
