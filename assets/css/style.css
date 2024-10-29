@@ -396,7 +396,7 @@ hr {
   -webkit-transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
   transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
   border: 2px solid transparent;
-  border-radius: 8px;
+  border-radius: 100px;
 }
 .btn span {
   position: relative;
@@ -521,6 +521,22 @@ hr {
 }
 .btn.border_dark:hover span small {
   color: #ffffff;
+}
+/* border latest  */
+.btn.border_new {
+  color: #1068B2;
+  background-color: #fff;
+  border-color: #1068B2;
+}
+.btn.border_new:hover {
+  color: #1068B2;
+  background-color: #fff;
+  border-color: #1068B2;
+  -webkit-box-shadow: 2px 2px 30px rgba(31, 29, 13, 0.0894963), 10px 10px 0 0 #FFD32B;
+          box-shadow: 2px 2px 30px rgba(31, 29, 13, 0.0894963), 10px 10px 0 0 #FFD32B;
+}
+.btn.border_new:hover span small {
+  color: #1068B2;
 }
 
 /* border light btn */
@@ -1645,6 +1661,7 @@ color: #fff;
 /* custom carousel */
 .carousel_item_1, .carousel_item_2, .carousel_item_3, .hero_banner.style_2 {
   min-height: 85vh; /* Adjust based on your desired height */
+  background-image: contain;
 }
 
 
@@ -1884,7 +1901,7 @@ background-position: bottom;
 
 .custom-text {
   font-size: 20px;    /* Adjust the font size */
-  font-weight: 600;   /* Adjust the font weight */
+  font-weight: 400;   /* Adjust the font weight */
 }
 
 /* custom shapes adjust */
@@ -2833,9 +2850,20 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
   bottom: 9vh;
   right: -30%;
 }
+
+
 .banner_image_2 .image_wrap_4 {
   top: 38%;
   left: -2%;
+}
+/* for loancompare page */
+.banner_image_2 .image_wrap_5 {
+  bottom: 2vh;
+  right: -25%;
+}
+.banner_image_2 .image_wrap_6 {
+  bottom: -30vh;
+  right: 60%;
 }
 
 /* 3.1 - Banner - End
