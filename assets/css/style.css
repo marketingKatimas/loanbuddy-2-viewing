@@ -4262,16 +4262,18 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
   left: 0;
   right: 0;
   z-index: 99;
-  padding: 44px 0;
+  padding: 20px 0 0;
   position: absolute;
   -webkit-transition: padding 0.3s;
   transition: padding 0.3s;
+  background: white;
+  line-height: 4;
 }
 .site_header .container {
   max-width: 1430px;
 }
 .site_header.sticky {
-  padding: 10px 0;
+  /* padding: 10px 0; */
   position: fixed;
   background-color: rgba(255, 255, 255, 0.96);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -4409,7 +4411,7 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
 }
 
 .site_header_1 + main {
-  padding-top: 130px;
+  padding-top: 110px;
 }
 
 .site_header_2 .container {
