@@ -577,16 +577,16 @@ form#wizard input#loanTermsCondition {
 }
 
 .loanfit-banner {
-  height: 91vh;
+  height: 100vh;
   background-image: url('../images/loanfit/LoanFit-KV.png');
   background-size: cover;
   background-position: center;
 }
 
-.site_header_3 {
+/* .site_header_3 {
   padding: 0;
   line-height: 87px;
-}
+} */
 
 .site_header_3.sticky {
   padding: 0;
