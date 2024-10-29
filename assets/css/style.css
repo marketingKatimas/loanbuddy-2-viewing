@@ -1936,8 +1936,8 @@ background-position: bottom;
 /* custom shapes adjust */
 
 .about_banner .shape_img_9{
-  top: 350px;
-  right: 350px;
+  top: 200px;
+  right: 550px;
   max-width: 170px;
   z-index: 10;
 }
@@ -1960,7 +1960,7 @@ background-position: bottom;
 
 .about_banner .shape_img_6{
   bottom: 350px;
-  right: 40vw;
+  right: 37vw;
   max-width: 200px;
   z-index: 10;
   max-width: 200px;
@@ -2890,7 +2890,7 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
 }
 .banner_image_2 .image_wrap_3 {
   bottom: 18vh;
-  right: 1%;
+  right: 3%;
 }
 
 .banner_image_2 .image_wrap_7 {
@@ -2899,7 +2899,7 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
 }
 
 .banner_image_2 .image_wrap_8 {
-  top: 20%;
+  top: -20%;
   left: -2%;
 }
 
