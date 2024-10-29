@@ -1214,7 +1214,7 @@ blockquote p {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  color: #1F1D0D;
+  color: #ffff;
   margin-bottom: 6px;
   font-family: "Barlow", sans-serif;
 }
@@ -1934,6 +1934,22 @@ background-position: bottom;
 
 
 /* custom shapes adjust */
+
+.about_banner .shape_img_7{
+  top: 270px;
+  right: -20px;
+  max-width: 170px;
+  z-index: 10;
+}
+
+.about_banner .shape_img_6{
+  bottom: 350px;
+  right: 40vw;
+  max-width: 200px;
+  z-index: 10;
+  max-width: 200px;
+  overflow: hidden;
+}
 
 .intro_video_section .shape_img_5{
   bottom: 120px;
