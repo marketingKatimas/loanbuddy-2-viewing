@@ -702,17 +702,17 @@ form#wizard input#loanTermsCondition {
   display: none;
 }
 
-.social_links a:after {
+/* .social_links a:after {
   background-color: #ffffff;
-}
+} */
 
 /* .social_links a:before {
   border: 2px solid #ffffff;
 } */
 
-.page_list .item_icon {
+/* .page_list .item_icon {
   color: inherit;
-}
+} */
 
 .site_footer .blog_small .item_title:hover {
   color: #F7FF62;
