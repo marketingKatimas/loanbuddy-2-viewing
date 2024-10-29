@@ -775,18 +775,21 @@ form#wizard input#loanTermsCondition {
 
 .loanfit-floating-1 {
   position: absolute;
-  top: -315px;
-  right: 5%;
+  top: -282px;
+  right: -7%;
   max-width: 260px !important;
 }
 
 .loanfit-floating-2 {
   position: absolute;
-  right: 0;
+  top: -37px;
+  right: -5%;
 }
 
 .loanfit-floating-3 {
   position: absolute;
+  top: 127px;
+  right: 13%;
   background: #ffffff;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;

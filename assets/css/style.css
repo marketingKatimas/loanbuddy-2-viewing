@@ -1898,6 +1898,10 @@ background-position: bottom;
   border-radius: 6px;
 }
 
+.line-height-custom {
+  line-height: 58px !important;
+}
+
 /* custom transparency */
 .transparent{
   opacity: 0.4;
