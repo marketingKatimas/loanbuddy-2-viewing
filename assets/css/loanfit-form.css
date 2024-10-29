@@ -776,7 +776,8 @@ form#wizard input#loanTermsCondition {
 .loanfit-floating-1 {
   position: absolute;
   top: -315px;
-  right: -15%;
+  right: 5%;
+  max-width: 260px !important;
 }
 
 .loanfit-floating-2 {
@@ -790,6 +791,7 @@ form#wizard input#loanTermsCondition {
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
   border-top-right-radius: 18px;
+  max-width: 260px !important;
 }
 
 @media (min-width: 1600px) {
@@ -797,6 +799,7 @@ form#wizard input#loanTermsCondition {
     position: absolute;
     top: -404px;
     right: -36%;
+    max-width: none !important;
   }
   
   .loanfit-floating-2 {
@@ -815,6 +818,7 @@ form#wizard input#loanTermsCondition {
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
     border-top-right-radius: 18px;
+    max-width: none !important;
   }
 }
 
