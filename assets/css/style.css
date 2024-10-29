@@ -2899,8 +2899,10 @@ z-index:21;opacity:0;visibility:hidden;line-height:normal}
 }
 
 .banner_image_2 .image_wrap_8 {
-  top: -20%;
-  left: -2%;
+  /* top: -20%;
+  left: -2%; */
+  top: -30px;
+  left: 0%;
 }
 
 .banner_image_2 .image_wrap_4 {
