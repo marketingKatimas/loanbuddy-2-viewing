@@ -13,3 +13,33 @@
     padding: 20px;
     background: white;
 }
+
+.contact-floating-1 {
+    max-width: 260px !important;
+    position: absolute;
+    top: -338px;
+    right: -159%;
+}
+
+.contact-floating-2 {
+    max-width: 260px !important;
+    position: absolute;
+    top: -37px;
+    right: 44%;
+}
+
+@media (min-width: 1600px) {
+    .contact-floating-1 {
+        max-width: 260px !important;
+        position: absolute;
+        top: -425px;
+        right: -205%;
+    }
+
+    .contact-floating-2 {
+        max-width: 260px !important;
+        position: absolute;
+        top: -37px;
+        right: 15%;
+    }
+}

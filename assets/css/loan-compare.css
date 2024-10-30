@@ -1,0 +1,29 @@
+.loancompare-floating-1 {
+    max-width: 260px !important;
+    position: absolute;
+    top: 135px;
+    right: 58%;
+}
+
+.loancompare-floating-2 {
+    max-width: 260px !important;
+    position: absolute;
+    top: -111px;
+    right: -28%;
+}
+
+@media (min-width: 1600px) {
+    .loancompare-floating-1 {
+        max-width: 260px !important;
+        position: absolute;
+        top: 95px;
+        right: 45%;
+    }
+
+    .loancompare-floating-2 {
+        max-width: 260px !important;
+        position: absolute;
+        top: -200px;
+        right: -50%;
+    }
+}

@@ -1,0 +1,29 @@
+.faq-floating-1 {
+    max-width: 260px !important;
+    position: absolute;
+    top: 5px;
+    right: -67%;
+}
+
+.faq-floating-2 {
+    max-width: 260px !important;
+    position: absolute;
+    top: -286px;
+    right: 100%;
+}
+
+@media (min-width: 1600px) {
+    .faq-floating-1 {
+        max-width: 260px !important;
+        position: absolute;
+        top: 31px;
+        right: -122%;
+    }
+
+    .faq-floating-2 {
+        max-width: 260px !important;
+        position: absolute;
+        top: -354px;
+        right: 76%;
+    }
+}
