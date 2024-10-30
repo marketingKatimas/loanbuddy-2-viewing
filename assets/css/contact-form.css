@@ -3,6 +3,7 @@
     color: #1069b1;
     border: 1px solid #1069b1;
     padding: 20px;
+    background: white;
 }
 
 .error-contact-text {
@@ -10,4 +11,5 @@
     color: red;
     border: 1px solid red;
     padding: 20px;
+    background: white;
 }
